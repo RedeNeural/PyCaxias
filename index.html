@@ -145,5 +145,13 @@
             </div>
             </div>
         </section>
+    <div style="display:none;">
+        <script type="text/javascript">
+            $('nav li a').on('click', function() {
+                 $('nav li.active').removeClass('active');
+                 $(this).parent().addClass('active');
+            });
+        </script>
+    </div>
     </body>
 </html>
