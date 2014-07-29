@@ -5,7 +5,6 @@ header {
 	background-color: #2b2b2b;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-size: 100% auto;
 }
 
 .logo-link {
@@ -45,4 +44,11 @@ header {
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	margin-top: 50px;
+}
+
+body { margin-top: 50px; }
+
+section {
+    padding-top: 50px;
+    margin-top: -50px;
 }
