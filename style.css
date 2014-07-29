@@ -52,3 +52,7 @@ section {
     padding-top: 50px;
     margin-top: -50px;
 }
+
+.navbar-default{
+	background-image: linear-gradient(to bottom, #F8F8F8 0px, #DDD 90%);
+}
