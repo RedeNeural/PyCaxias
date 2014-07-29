@@ -26,6 +26,10 @@ header {
 	box-shadow: inset 0 0 140px #000;
 }
 
+.logo-name{
+	padding-top: 62px;
+}
+
 .logo-link {
 	font-size: 3em;
 	letter-spacing: -0.04em;
