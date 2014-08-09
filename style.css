@@ -1,7 +1,9 @@
 a, a:hover, a:active, a:focus {
     outline: 0;
 }
-
+body {
+  position: relative;
+}
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 700;
@@ -128,6 +130,13 @@ h2.subtitle {
   margin: 50px;
 }
 
+#map_canvas {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
 @media (max-width: 480px) {
 	.logo-link {
 		font-size: 2em;
