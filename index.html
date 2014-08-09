@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,6 +14,13 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% }
+        </style>
+                     
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -121,12 +129,14 @@
         <section id="local">
         <div class="container">
           <h2 class="subtitle">Local</h2>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3483.682705366813!2d-51.218478999999995!3d-29.174021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94dbf%3A0x3398f5530c56890c!2sFtec+Faculdades!5e0!3m2!1spt-BR!2s!4v1406386338228" width="100%" height="450"></iframe>
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3483.682705366813!2d-51.218478999999995!3d-29.174021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94dbf%3A0x3398f5530c56890c!2sFtec+Faculdades!5e0!3m2!1spt-BR!2s!4v1406386338228" width="100%" height="450"></iframe>-->
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
         </section>
     <div style="display:none;">
-        <script type="text/javascript" src="javascript.js">
-        </script>
+        <script type="text/javascript" src="javascript.js"></script>
     </div>
     <footer>
         <div class="container">
