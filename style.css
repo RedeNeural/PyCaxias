@@ -88,7 +88,6 @@ footer {
 	padding: 30px;
 }
 h2.subtitle {
-	border-bottom: 2px solid #CCC;
 	margin-bottom: 20px;
 }
 
@@ -127,3 +126,4 @@ h2.subtitle {
 #directions-panel .adp-directions td {
   margin: 50px;
 }
+
