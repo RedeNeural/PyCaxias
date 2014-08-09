@@ -10,7 +10,7 @@ var map;
 var ftec = new google.maps.LatLng(-29.173913, -51.218490);
 directionsDisplay = new google.maps.DirectionsRenderer();
 var mapOptions = {
-  zoom:17,
+  zoom:15,
   center: ftec,
   streetViewControl: false,
   panControl: true,
