@@ -16,6 +16,7 @@ h2 {
 p {
 	font-size: 18px;
 	font-weight: 400;
+    text-align:justify;
 }
 
 header {
@@ -90,7 +91,6 @@ footer {
 	padding: 30px;
 }
 h2.subtitle {
-	border-bottom: 2px solid #CCC;
 	margin-bottom: 20px;
 }
 

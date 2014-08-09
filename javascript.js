@@ -73,14 +73,6 @@ function calcRoute(starte) {
   });
 }
 
-if (navigator.geolocation) { 
-    navigator.geolocation.getCurrentPosition(function(position) {
-
-        var point = new google.maps.LatLng(position.coords.latitude, 
-                                    position.coords.longitude);
-        calcRoute(point);
-    });
-}
 
 
 autocomplete = new google.maps.places.Autocomplete(
