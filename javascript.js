@@ -1,16 +1,18 @@
 $('.navbar a').on('click', function() {
-     $('nav li.active').removeClass('active');
-     $(this).parent().addClass('active');
      var location_anchor = $(this).attr('href');
+     if(location_anchor == '#'){
+        location_anchor = 'html';
+     }
      $('html, body').animate({
       scrollTop: $(location_anchor).offset().top
       }, 1000);
 });
 
 $('#footer-menu li a').on('click', function() {
-     $('nav li.active').removeClass('active');
-     $(this).parent().addClass('active');
      var location_anchor = $(this).attr('href');
+     if(location_anchor == '#'){
+        location_anchor = 'html';
+     }
      $('html, body').animate({
       scrollTop: $(location_anchor).offset().top
       }, 1000);
@@ -59,14 +61,6 @@ function calcRoute(starte) {
   });
 }
 
-if (navigator.geolocation) { 
-    navigator.geolocation.getCurrentPosition(function(position) {
-
-        var point = new google.maps.LatLng(position.coords.latitude, 
-                                    position.coords.longitude);
-        calcRoute(point);
-    });
-}
 
 
 autocomplete = new google.maps.places.Autocomplete(
@@ -85,3 +79,5 @@ document.getElementById("search-route").addEventListener("keypress", function(e)
         return false;
     }
 });
+
+$('body').scrollspy({ target: '#main-navbar' });
