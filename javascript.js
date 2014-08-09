@@ -1,6 +1,19 @@
 $('.navbar a').on('click', function() {
      $('nav li.active').removeClass('active');
      $(this).parent().addClass('active');
+     var location_anchor = $(this).attr('href');
+     $('html, body').animate({
+      scrollTop: $(location_anchor).offset().top
+      }, 1000);
+});
+
+$('#footer-menu li a').on('click', function() {
+     $('nav li.active').removeClass('active');
+     $(this).parent().addClass('active');
+     var location_anchor = $(this).attr('href');
+     $('html, body').animate({
+      scrollTop: $(location_anchor).offset().top
+      }, 1000);
 });
 
 //map
