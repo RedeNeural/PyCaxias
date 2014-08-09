@@ -1,6 +1,19 @@
 $('.navbar a').on('click', function() {
      $('nav li.active').removeClass('active');
      $(this).parent().addClass('active');
+     var location_anchor = $(this).attr('href');
+     $('html, body').animate({
+      scrollTop: $(location_anchor).offset().top
+      }, 1000);
+});
+
+$('#footer-menu li a').on('click', function() {
+     $('nav li.active').removeClass('active');
+     $(this).parent().addClass('active');
+     var location_anchor = $(this).attr('href');
+     $('html, body').animate({
+      scrollTop: $(location_anchor).offset().top
+      }, 1000);
 });
 
 //map
@@ -10,7 +23,7 @@ var map;
 var ftec = new google.maps.LatLng(-29.173913, -51.218490);
 directionsDisplay = new google.maps.DirectionsRenderer();
 var mapOptions = {
-  zoom:17,
+  zoom:15,
   center: ftec,
   streetViewControl: false,
   panControl: true,
