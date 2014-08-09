@@ -18,6 +18,18 @@ $('#footer-menu li a').on('click', function() {
       }, 1000);
 });
 
+$('#buscar_caminho').on('click', function(e) {
+    e.preventdefault()
+    if (navigator.geolocation) { 
+        navigator.geolocation.getCurrentPosition(function(position) {
+
+        var point = new google.maps.LatLng(position.coords.latitude, 
+                                    position.coords.longitude);
+        calcRoute(point);
+        });
+    }
+});
+
 //map
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
