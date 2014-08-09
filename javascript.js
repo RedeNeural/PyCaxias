@@ -1,6 +1,4 @@
 $('.navbar a').on('click', function() {
-     $('nav li.active').removeClass('active');
-     $(this).parent().addClass('active');
      var location_anchor = $(this).attr('href');
      if(location_anchor == '#'){
         location_anchor = 'html';
@@ -11,8 +9,6 @@ $('.navbar a').on('click', function() {
 });
 
 $('#footer-menu li a').on('click', function() {
-     $('nav li.active').removeClass('active');
-     $(this).parent().addClass('active');
      var location_anchor = $(this).attr('href');
      if(location_anchor == '#'){
         location_anchor = 'html';
@@ -91,3 +87,5 @@ document.getElementById("search-route").addEventListener("keypress", function(e)
         return false;
     }
 });
+
+$('body').scrollspy({ target: '#main-navbar' });
