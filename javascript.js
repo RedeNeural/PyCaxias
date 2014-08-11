@@ -1,23 +1,3 @@
-$('.navbar a').on('click', function() {
-     var location_anchor = $(this).attr('href');
-     if(location_anchor == '#'){
-        location_anchor = 'html';
-     }
-     $('html, body').animate({
-      scrollTop: $(location_anchor).offset().top
-      }, 1000);
-});
-
-$('#footer-menu li a').on('click', function() {
-     var location_anchor = $(this).attr('href');
-     if(location_anchor == '#'){
-        location_anchor = 'html';
-     }
-     $('html, body').animate({
-      scrollTop: $(location_anchor).offset().top
-      }, 1000);
-});
-
 $('#buscar_caminho').on('click', function(e) {
     e.preventdefault()
     if (navigator.geolocation) { 

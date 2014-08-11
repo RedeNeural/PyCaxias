@@ -22,10 +22,11 @@ p {
 header {
 	padding: 0px 0 62px;
 	text-align: center;
-	background-image: url('fundo-header.jpg');
-	background-color: #2b2b2b;
+	background-image: url('http://tchelinux.org/media/tchelinux.svg');
+	background-color: #000;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+    background-size: auto 100%;
+	background-position: right bottom;
     box-shadow: 10px 10px 250px 100px #000 inset;
 }
 
