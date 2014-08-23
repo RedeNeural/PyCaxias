@@ -1,4 +1,5 @@
-$('.navbar a').on('click', function() {
+$('.navbar a').on('click', function(event) {
+     event.preventDefault();
      var location_anchor = $(this).attr('href');
      if(location_anchor == '#'){
         location_anchor = 'html';
@@ -8,7 +9,8 @@ $('.navbar a').on('click', function() {
       }, 1000);
 });
 
-$('#footer-menu li a').on('click', function() {
+$('#footer-menu li a').on('click', function(event) {
+     event.preventDefault();
      var location_anchor = $(this).attr('href');
      if(location_anchor == '#'){
         location_anchor = 'html';
