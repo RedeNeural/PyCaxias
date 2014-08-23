@@ -149,3 +149,11 @@ h2.subtitle {
     margin-top: 50px;
     padding-top: 0px;
 }
+
+footer .github, footer .github p{
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 0;
+}
