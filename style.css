@@ -157,3 +157,28 @@ footer .github, footer .github p{
 footer {
     padding-bottom: 0;
 }
+.sponsor-item, .partner-item {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+.sponsor-link, .partner-link {
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+.photo {
+    max-width: 100%;
+    position: relative;
+    top: -1px;
+}
+.sponsor-link, .partner-link {
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+a.sponsor-logo.sponsor-link:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 1.15);
+}
