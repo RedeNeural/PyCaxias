@@ -22,7 +22,7 @@ p {
 header {
 	padding: 0px 0 62px;
 	text-align: center;
-	background-image: url('http://tchelinux.org/media/tchelinux.svg');
+	background-image: url("images/tchelinux.png");
 	background-color: #000;
 	background-repeat: no-repeat;
     background-size: auto 100%;
