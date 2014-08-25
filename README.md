@@ -1,4 +1,4 @@
-PyCaxias2014
+TchêLinux Caxias do Sul 2014
 ============
 
-PyCaxias2014
+[caxias.tchelinux.org](caxias.tchelinux.org)
