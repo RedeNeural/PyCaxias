@@ -101,3 +101,9 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         $(this).collapse('hide');
     }
 });
+
+$(document).on('click','a.navbar-brand',function(e) {
+    if( $(e.target).is('a') ) {
+        $('.navbar-collapse.in').collapse('hide');
+    }
+});
