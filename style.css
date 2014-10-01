@@ -157,11 +157,11 @@ footer .github, footer .github p{
 footer {
     padding-bottom: 0;
 }
-.sponsor-item, .partner-item {
+.apoio-item, .partner-item {
     display: inline-block;
     margin: 0 30px 30px 0;
 }
-.sponsor-link, .partner-link {
+.apoio-link, .partner-link {
     display: block;
     width: 150px;
     height: 150px;
@@ -174,11 +174,11 @@ footer {
     position: relative;
     top: -1px;
 }
-.sponsor-link, .partner-link {
+.apoio-link, .partner-link {
     background: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
-a.sponsor-logo.sponsor-link:hover {
+a.apoio-logo.apoio-link:hover {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 1.15);
 }
