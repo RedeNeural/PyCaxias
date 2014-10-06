@@ -35,7 +35,7 @@ $('#buscar_caminho').on('click', function(e) {
 $('.show-info').on('click',function(e){
     e.preventDefault();
     $(this).parent('span').children('.hide-info').show();
-    $(this).parent('span').children('.hide-info-desc').show();
+    $(this).parent('span').children('.hide-info-desc').show("slow");
     $(this).hide();
 });
 
@@ -43,7 +43,7 @@ $('.hide-info').on('click',function(e){
     e.preventDefault();
     $(this).parent('span').children('.show-info').show();
     $(this).hide();
-    $(this).parent('span').children('.hide-info-desc').hide();
+    $(this).parent('span').children('.hide-info-desc').hide("slow");
 });
 
 //map
