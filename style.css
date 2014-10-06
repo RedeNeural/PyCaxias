@@ -210,6 +210,8 @@ a.apoio-logo.apoio-link:hover {
 
 .speech-info{
   display: inline-block;
+  width: 89%
+
 }
 
 .speech-info *{
@@ -257,3 +259,28 @@ img {
     border: 0 none;
     vertical-align: inherit;
 }
+
+
+.show-info, .hide-info{
+    margin-left: 5px;
+    color: black;
+    outline: 0;
+    text-decoration: none;
+}
+
+
+.show-info:focus, .hide-info:focus{
+    margin-left: 5px;
+    color: black;
+    outline: 0;
+    text-decoration: none;
+}
+
+.show-info span, .hide-info span{
+    margin-left: 5px;
+}
+
+.hide-info-desc{
+    margin-left: 0px; 
+}
+
