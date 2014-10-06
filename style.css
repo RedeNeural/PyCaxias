@@ -208,6 +208,10 @@ a.apoio-logo.apoio-link:hover {
   float:left;
 }
 
+.speech-info{
+  display: inline-block;
+}
+
 .speech-info *{
     margin-left:58px;
 }
@@ -228,4 +232,28 @@ a.apoio-logo.apoio-link:hover {
     font-weight:normal;
     text-align: justify;
     display:block;
+}
+
+
+.speaker-photo {
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+}
+
+
+.speaker-photo .photo {
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease-out 0s;
+}
+
+.photo {
+    max-width: 100%;
+    position: relative;
+    top: -1px;
+}
+img {
+    border: 0 none;
+    vertical-align: inherit;
 }
