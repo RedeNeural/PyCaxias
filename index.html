@@ -43,8 +43,8 @@
                       <ul class="nav navbar-nav">
                         <li style="display:none;"><a href="#sobre">Sobre</a></li>
                         <li><a href="#inscricao">Inscrições</a></li>
-                        <li><a href="#palestrantes">Palestrantes</a></li>
                         <li><a href="#lightning">Lightning Talks</a></li>
+                        <li><a href="#palestrantes">Palestras</a></li>
                         <li><a href="#programacao">Programação</a></li>
                         <li><a href="#local">Local</a></li>
                         <li><a href="#apoio">Apoio</a></li>
@@ -89,71 +89,26 @@
               </div>
             </div>
         </section>
-        
-        <section id="palestrantes">
-        <div class="container">
-          <h2 class="subtitle">Palestrantes</h2>
-            <p>
-                <a target="_blank" href="http://www.goo.gl/FaUHfM">Envia sua palestra Python!</a>
-            </p>
-            <p>
-                Submissão disponível até 5 de Outubro.
-            </p>
-            </div>
-        </section>
         <section id="lightning">
         <div class="container">
-          <h2 class="subtitle">Lightning talks</h2>
-            <p>O PyCaxias 2014 também terá lightning talks. Aprenda mais sobre lightning talks <a href="http://pt.wikipedia.org/wiki/Lightning_talk">aqui</a>.</p>
+            <h2 class="subtitle">Lightning talks</h2>
+            <p>O que você tem feito com Python? Sabe de alguma curiosidade em relação a ele? Tem algum assunto interessante que não está entre as palestras?
+            </p>
+            <p>
+            O PyCaxias 2014 terá <a target="_blank" href="http://pt.wikipedia.org/wiki/Lightning_talk">lightning talks</a> de até 5 minutos para você mostrar o que pode ser feito com Python.
+            </p>
             <p>
                 <a target="_blank" href="http://goo.gl/forms/AY01cO6Gi3">Envia sua proposta de lightning talk!</a>
             </p>
             <p>
                 Submissão disponível até 17 de Outubro, um dia antes do evento.
             </p>
-            </div>
+        </div>
         </section>
-        <section id="programacao">
-        <div class="container">
-          <h2 class="subtitle">Programação</h2>
-            <p>
-                A relação de palestras será atualizada à medida que os palestrantes são confirmados.
-            </p>
-            <p>Em breve ordem das palestras...</p>
-            <!-- <div class="schedule-tbl">
-              <table class="table table-responsive">
-                <thead>
-                  <tr>
-                    <th class="schedule-time">Horário</th>
-                    <th class="schedule-slot">Palestra</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="schedule-other">
-                    <td class="schedule-time">9h00</td>
-                    <td class="schedule-slot">Recepção</td>
-                  </tr>
-
-                  <tr class="schedule-other">
-                    <td class="schedule-time">9h15</td>
-                    <td class="schedule-slot">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, orci quis tristique sagittis, ante lectus sodales mi, at accumsan ligula justo sed lorem - Palestrante
-                    </td>
-                  </tr>
-
-                  <tr class="schedule-other">
-                    <td class="schedule-time">16h00</td>
-                    <td class="schedule-slot">Encerramento</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
-          </div>
-        </section>
-        <section id="palestras">
+        <section id="palestrantes">
         <div class="container">
           <h2 class="subtitle">Palestras</h2>
-          <div class="speech-container">
+          <div id="speech-1" class="speech-container">
             <span class="speaker-photo">
               <img itemprop="image" alt="Miguel Grazziotin" src="http://www.gravatar.com/avatar/32b963681256ed1b7f97fd3a69615750?s=200" class="photo">
             </span>
@@ -171,7 +126,7 @@
                 </span>
             </div>
           </div>
-          <div class="speech-container">
+          <div id="speech-2" class="speech-container">
             <span class="speaker-photo">
               <img itemprop="image" alt="Cesar Kawakami" src="http://www.gravatar.com/avatar/f1c7c31d9bc22f177dcded711e96499e?s=200" class="photo">
             </span>
@@ -210,6 +165,46 @@
                 </span>
             </div>
           </div>
+        </div>
+        </section>
+        <section id="programacao">
+        <div class="container">
+            <h2 class="subtitle">Programação</h2>
+            <p>Em breve...</p>
+            <div class="schedule-tbl">
+                <table class="table table-responsive">
+                <thead>
+                    <tr>
+                    <th class="schedule-time">Horário</th>
+                    <th class="schedule-slot">Palestra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="schedule-other">
+                        <td class="schedule-time">9h00</td>
+                        <td class="schedule-slot">Recepção</td>
+                    </tr>
+<!--
+                    <tr class="schedule-other">
+                        <td class="schedule-time">9h15</td>
+                        <td class="schedule-slot">
+                        <a href="#speech-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, orci quis tristique sagittis, ante lectus sodales mi, at accumsan ligula justo sed lorem - Palestrante
+                        </a>
+                        </td>
+                    </tr>
+-->
+                    <tr class="schedule-other">
+                        <td class="schedule-time">17h00</td>
+                        <td class="schedule-slot">Encerramento</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        </section>
+        <section id="palestras">
+        <div class="container">
         </div>
         </section>
         <section id="local">
@@ -262,8 +257,9 @@
                 <div class="col-lg-12">
                     <ul class="list-inline" id="footer-menu">
                         <li class="active"><a href="#">PyCaxias</a></li>
-                        <li><a href="#palestrantes">Palestrantes</a></li>
+                        <li><a href="#inscricao">Inscrições</a></li>
                         <li><a href="#lightning">Lightning Talks</a></li>
+                        <li><a href="#palestrantes">Palestras</a></li>
                         <li><a href="#programacao">Programação</a></li>
                         <li><a href="#local">Local</a></li>
                         <li><a href="#apoio">Apoio</a></li>

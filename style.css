@@ -189,8 +189,9 @@ a.apoio-logo.apoio-link:hover {
 
 .speech-container{
     padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px black dotted;
+    padding-top: 60px;
+    margin-top: -30px;
+    border-bottom: 2px #e7e7e7 solid;
 }
 
 .speech-title {
@@ -285,3 +286,6 @@ img {
     margin-left: 0px; 
 }
 
+.schedule-slot a{
+    color: rgb(51, 51, 51);
+}
