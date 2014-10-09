@@ -243,6 +243,7 @@ a.apoio-logo.apoio-link:hover {
     height: 120px;
     width: 120px;
     display: inline-block;
+    vertical-align: top;
 }
 
 
