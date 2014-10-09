@@ -216,7 +216,7 @@ a.apoio-logo.apoio-link:hover {
 
 }
 
-.speech-info *{
+.speech-info > *{
     margin-left:58px;
 }
 
