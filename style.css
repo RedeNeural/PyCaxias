@@ -209,35 +209,36 @@ a.apoio-logo.apoio-link:hover {
   margin-bottom: 5px;
   float:left;
 }
-
 .speech-info{
   display: inline-block;
   width: 89%
-
 }
-
 .speech-info > *{
     margin-left:58px;
 }
-
 .speech-description{
     font-weight:normal;
     text-align: justify;
     display: block;
 }
-
 .speaker-name{
     display:block;
-    font-size: 20px;
-    margin: 10px 0px 0px 58px;
+    font-size: 14px;
+    color: gray;
+    margin: 20px 0px 5px 58px;
 }
-
+.speaker-name .name{
+    font-size: 20px;
+    color: black;
+}
 .speaker-bio{
     font-weight:normal;
     text-align: justify;
     display:block;
 }
-
+.speaker-bio strong{
+    color: gray;
+}
 
 .speaker-photo {
     height: 120px;
@@ -245,14 +246,11 @@ a.apoio-logo.apoio-link:hover {
     display: inline-block;
     vertical-align: top;
 }
-
-
 .speaker-photo .photo {
     border-radius: 50%;
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
     transition: all 0.3s ease-out 0s;
 }
-
 .photo {
     max-width: 100%;
     position: relative;
@@ -262,23 +260,18 @@ img {
     border: 0 none;
     vertical-align: inherit;
 }
-
-
 .show-info, .hide-info{
     margin-left: 5px;
     color: black;
     outline: 0;
     text-decoration: none;
 }
-
-
 .show-info:focus, .hide-info:focus{
     margin-left: 5px;
     color: black;
     outline: 0;
     text-decoration: none;
 }
-
 .show-info span, .hide-info span{
     margin-left: 5px;
 }
