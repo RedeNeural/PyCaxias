@@ -195,7 +195,6 @@
                 </span>
             </div>
           </div>
-
           <div id="speech-3" class="speech-container">
             <span class="speaker-photo">
               <img itemprop="image" alt="Henrique Leal" src="https://avatars0.githubusercontent.com/u/819272" class="photo">
@@ -211,6 +210,49 @@
                 <h3 class="speaker-name">Henrique Leal</h3>
                 <span class="speaker-bio">
                     Apaixonado por Web, Linux, Software Livre e metodológias ágeis, Python/Django e jQuery. Programador da Turbosys e Acadêmico de sistemas de informação.
+                </span>
+            </div>
+          </div>
+
+          <div id="speech-4" class="speech-container">
+            <span class="speaker-photo">
+              <img itemprop="image" alt="Rodrigo Almeida" src="http://www.gravatar.com/avatar/b06a573a69fe4ce254422ae949dc1145?s=200" class="photo">
+            </span>
+            <!-- <span class="speech-time">09h15</span> -->
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    O case do Geekie Games 2014: Lidando com performance, bugfixing e cooperative multithreading em sistemas distribuídos Python (30 mil sessões por dia, 5 milhões de requests por dia and growing!)
+                </h3>
+                <span class="speech-description">
+
+                No geekie games 2014 temos milhares de usuários simultâneos usando uma plataforma de aprendizagem adaptativa composta por vários sistemas web independentes (arquitetura modular/distribuída - misto de Heroku e Google AppEngine) e a idéia da palestra é contar como foi nossa estratégia para lidar com o desafio de otimizar performance e encontrar causa raiz de bugs nesse cenário no qual fazemos muitas RPCs (muito tempo gasto em I/O) e no qual debugar performance e causa raiz de bugs envolve debugar vários sistemas ao mesmo tempo potencialmente. Isso tudo num projeto de alcance nacional onde receber 10000 usuários simultâneos ou ter 200 mil sessões por dia são uma realidade. Outline inicialmente pensado:
+                    <br>
+
+                    <ul>
+                        <li>
+                        Apresentação rápida da plataforma Geekie: 5 sistemas principais, todos Python, misto de Heroku e Google AppEngine. Tudo isso formando um sistema de recomendação que altera a trilha de aprendizado de cada aluno a cada interação chave dele com o ambiente de estudos. Somos mais parecidos com o ""News Feed"" do Facebook do que com uma aplicação web padrão.
+                        </li>
+                        <li>
+                        gevent como ferramenta para paralelização de código python I/O intensive
+                        </li>
+                        <li>
+                        como lidamos com o lançamento nacional, sem ter uma previsibilidade boa de qual seria o volume inicial de acesso e qual seriam os gargalos de performance no início. Os mesmos sistemas que atendem o geekie games atendem todos os outros clientes da Geekie então o sistema cair não era uma opção!
+                        </li>
+                        <li>
+                        como instrumentamos nossos sistemas pra conseguir enxergar rapidamente onde estavam os problemas, sejam eles problemas genéricos ou problemas afetando usuários específicos.
+                        </li>
+                        <li>
+                        principais conclusões e aprendizados
+                        </li>
+                        <li>
+                        Q&A
+                        </li>
+                    </ul>
+
+                </span>
+                <h3 class="speaker-name">Rodrigo Almeida</h3>
+                <span class="speaker-bio">
+                    Rodrigo Almeida é engenheiro de computação formado pelo ITA, tem passagem por diversas empresas do vale do silício (incluindo Google e Microsoft) e hoje é tech lead na Geekie, empresa líder do Brasil em EdTech que está contratando gente como vocë. E que também tem tradição com palestras boas :-)
                 </span>
             </div>
           </div>
