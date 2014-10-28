@@ -294,3 +294,12 @@ img {
 .lightning-talk{
     color: #777;
 }
+
+.carousel.slide{
+  max-width: 768px;
+  margin: auto;
+}
+
+.carousel-indicators{
+  bottom: 0;
+}
