@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PyCaxias 2015</title>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% }
+        </style>
+                     
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">PyCaxias</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                      <ul class="nav navbar-nav">
+                        <li style="display:none;"><a href="#sobre">Sobre</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+        <header class="header">
+          <div class="wrapper">
+            <h1 class="logo-name">
+              <img src="images/pycaxias.png"/>
+            </h1>
+            <h2 class="tagline">17 de Outubro de 2015, Universidade de Caxias do sul - Auditório do bloco 46</h2>
+          </div>
+        </header>
+        <section id="logo">
+          <div class="container" style="text-align:center;">
+            
+          </div>
+        </section>
+        <section id="sobre">
+            <div class ="container">
+            <h2 class="subtitle">Sobre</h2>
+            <p>
+                Este é o segundo PyCaxias e o objetivo é movimentar a serra gaúcha!
+                A região já sediou uma edição da Python Brasil e também é o berço de grandes nomes que contribuíram para que a comunidade Python tenha alcançado seu nível atual.
+            </p>
+            <p>
+                
+            </p>
+            </div>
+        </section>
+        
+        <section id="programacao">
+        <div class="container">
+            <h2 class="subtitle">Programação</h2>
+            <div class="schedule-tbl">
+                <a href="http://goo.gl/forms/1VczcYucbc">Envie sua palestra :) </a>
+            </div>
+        </div>
+        </section>
+        <section id="palestras">
+        <div class="container">
+        </div>
+        </section>
+        <section id="local">
+        <div class="container">
+          <h2 class="subtitle">Local</h2>
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3483.682705366813!2d-51.218478999999995!3d-29.174021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94dbf%3A0x3398f5530c56890c!2sFtec+Faculdades!5e0!3m2!1spt-BR!2s!4v1406386338228" width="100%" height="450"></iframe>-->
+          <p>
+            Universidade de Caxias do sul - Auditório do bloco 46
+          </p>
+          <p>
+            Rua Francisco Getúlio Vargas, 1130 - CEP 95070-560
+            Caxias do Sul - Rio Grande do Sul
+          </p>
+
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
+        </section>
+        <section id="apoio">
+            <div class="container">
+                <h2 class="subtitle">Apoio</h2>
+                    <ul class="apoio-list">
+                      <li class="apoio-item" itemscope="" itemtype="http://schema.org/Organization">
+                        <a href="http://goo.gl/dix3K3" title="Seja um apoiador" class="apoio-logo apoio-link" itemprop="url">
+                          <span class="glyphicon glyphicon-plus"></span>
+                        </a>
+                      </li>
+                    </ul>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline" id="footer-menu">
+                        <li class="active"><a href="#">PyCaxias</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="github">
+                <a href="https://github.com/RedeNeural/PyCaxias2014">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                </a>
+                <p class="copyright text-muted small">Copyright © Rede Neural 2014. Todos os Direitos Reservados</p>
+            </div>
+        </div>
+    </footer>
+    <div style="display:none;">
+        <script type="text/javascript" src="javascript.js"></script>
+    </div>
+    </body>
+</html>
