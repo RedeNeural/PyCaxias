@@ -4,11 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>PyCaxias 2015</title>
+        <link rel="icon" href="images/python-logo.png" type="image/x-icon"/>
+
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        
+
         <!-- Optional theme -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
@@ -21,13 +23,13 @@
           body { height: 100%; margin: 0; padding: 0 }
           #map_canvas { height: 100% }
         </style>
-                     
+
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                
+
                  <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -43,6 +45,7 @@
                       <ul class="nav navbar-nav">
                         <li style="display:none;"><a href="#sobre">Sobre</a></li>
                         <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
                         <li><a href="#local">Local</a></li>
                         <li><a href="#apoio">Apoio</a></li>
                       </ul>
@@ -55,66 +58,251 @@
             <h1 class="logo-name">
               <img src="images/pycaxias.png"/>
             </h1>
-            <h2 class="tagline">17 de Outubro de 2015, Universidade de Caxias do sul - Auditório do bloco 46</h2>
+            <h2 class="tagline">17 de Outubro de 2015<br/>Universidade de Caxias do sul - Auditório do bloco 46</h2>
           </div>
         </header>
         <section id="logo">
           <div class="container" style="text-align:center;">
-            
+
           </div>
         </section>
         <section id="sobre">
             <div class ="container">
-            <h2 class="subtitle">Sobre</h2>
-            <p>
-                Este é o segundo PyCaxias e o objetivo é movimentar a serra gaúcha!
-                A região já sediou uma edição da Python Brasil e também é o berço de grandes nomes que contribuíram para que a comunidade Python tenha alcançado seu nível atual.
-            </p>
-            <p>
-                
-            </p>
+                <h2 class="subtitle">Sobre</h2>
+                <p>
+                    Este é o segundo PyCaxias e o objetivo é movimentar a serra gaúcha!
+                    A região já sediou uma edição da Python Brasil e também é o berço de grandes nomes que contribuíram para que a comunidade Python tenha alcançado seu nível atual.
+                </p>
             </div>
         </section>
-        
         <section id="programacao">
-        <div class="container">
-            <h2 class="subtitle">Programação</h2>
-            <div class="schedule-tbl">
-                <a href="http://goo.gl/forms/1VczcYucbc" target="_blank">Envie sua palestra :) </a>
+            <div class="container">
+                <h2 class="subtitle">Programação</h2>
+                <div class="schedule-tbl">
+                    <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                        <th class="schedule-time">Horário</th>
+                        <th class="schedule-slot">Palestra</th>
+                        <td class="schedule-name">Palestrante</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="schedule-other lightning-talk">
+                            <td class="schedule-time">8h30</td>
+                            <td class="schedule-slot">Recepção/Credenciamento/Abertura</td>
+                            <td class="schedule-name"></td>
+                        </tr>
+                        <tr class="schedule-other">
+                            <td class="schedule-time">9h00</td>
+                            <td class="schedule-slot">Introdução ao Python e como aprender a programar sozinho com ferramentas gratuitas</td>
+                            <td class="schedule-name">Eduardo P. Silveira</td>
+                        </tr>
+                        <tr class="schedule-other">
+                            <td class="schedule-time">09h30</td>
+                            <td class="schedule-slot">Django no Openshift</td>
+                            <td class="schedule-name">Eduardo Erlo</td>
+                        </tr>
+                        <tr class="schedule-other">
+                            <td class="schedule-time">10h00</td>
+                            <td class="schedule-slot">Linux Containers</td>
+                            <td class="schedule-name">Bruno Barcarol Guimarães</td>
+                        </tr>
+                        <tr class="schedule-other lightning-talk">
+                            <td class="schedule-time">10h30</td>
+                            <td class="schedule-slot">Coffee Break</td>
+                            <td class="schedule-name"></td>
+                        </tr>
+                        <tr class="schedule-other">
+                            <td class="schedule-time">10h45</td>
+                            <td class="schedule-slot">Aplicação dinâmica com BackboneJS</td>
+                            <td class="schedule-name">Renato Suero</td>
+                        </tr>
+                        <tr class="schedule-other">
+                            <td class="schedule-time">11h15</td>
+                            <td class="schedule-slot">Functional Python</td>
+                            <td class="schedule-name">Giovane Liberato</td>
+                        </tr>
+                        <tr class="schedule-other">
+                            <td class="schedule-time">11h45</td>
+                            <td class="schedule-slot">CoPPla - Plataforma para aprendizagem colaborativa em Plone</td>
+                            <td class="schedule-name">Matheus Pereira</td>
+                        </tr>
+                        <tr class="schedule-other lightning-talk">
+                            <td class="schedule-time">12h15</td>
+                            <td class="schedule-slot">Encerramento</td>
+                            <td class="schedule-name"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
         </section>
         <section id="palestras">
-        <div class="container">
+            <div class="container">
+                <h2 class="subtitle">Palestras</h2>
+                <div id="speech-1" class="speech-container">
+                    <span class="speaker-photo">
+                      <img itemprop="image" alt="Eduardo P. Silveira" src="http://www.gravatar.com/avatar/5d8280108ccac15d547ca46ef22e034a?s=200" class="photo">
+                    </span>
+                    <!-- <span class="speech-time">09h15</span> -->
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Introdução ao Python e como aprender a programar sozinho com ferramentas gratuitas
+                        </h3>
+                        <span class="speech-description">
+                            <p>Python é uma linguagem de programação de alto nível "livre" que suporta diversos paradigmas, como o orientado a objetos, imperativo, funcional e procedural. A palestra tem como objetivo introduzir o participante na linguagem estudada, além de citar ferramentas gratuitas disponíveis no mercado para auxiliar o aprendizado de novas linguagens de programação, relatando a experiência durante o aprendizado de Python.</p>
+                        </span>
+                        <h3 class="speaker-name">Eduardo P. Silveira</h3>
+                        <span class="speaker-bio">
+                            <p>Bacharelando em Sistemas de Informação pela Universidade de Caxias do Sul, trabalha a 8 anos com servidores GNU/Linux, principalmente com gestão de Internet. Admirador do software livre, foi moderador do Viva o Linux durante quase 7 anos, entre 2009 e 2015. Também é fotografo amador nas horas vagas, além de podcaster e idealizador do site peloamordedeus.org.br.</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-2" class="speech-container">
+                    <span class="speaker-photo">
+                      <img itemprop="image" alt="Eduardo Erlo" src="http://www.gravatar.com/avatar/19c9a2b1eb34de40a8a208223b445b11?s=200" class="photo">
+                    </span>
+                    <!-- <span class="speech-time">09h15</span> -->
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Django no Openshift
+                        </h3>
+                        <span class="speech-description">
+                            <p>Será apresentado uma introdução à PaaS, que permite aos desenvolvedores rapidamente fazer deploy e escalar suas aplicações. Após isto, vou apresentar um live coding de uma aplicação Django, onde será feito o deploy da mesma no Openshift Online.</p>
+                        </span>
+                        <h3 class="speaker-name">Eduardo Erlo</h3>
+                        <span class="speaker-bio">
+                            <p>Eduardo Erlo, possui 4+ anos de experiência trabalhando com Python e Django.Atualmente trabalha como analista de sistemas no setor de sistemas da Universidade de Caxias do Sul,trabalhando com uma equipe de aproximadamente 23 pessoas.</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-3" class="speech-container">
+                    <span class="speaker-photo">
+                      <img itemprop="image" alt="Bruno Barcarol Guimarães" src="http://www.gravatar.com/avatar/73317fb53470a68468b522a2002ea5e0?s=200" class="photo">
+                    </span>
+                    <!-- <span class="speech-time">09h15</span> -->
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Linux Containers
+                        </h3>
+                        <span class="speech-description">
+                            <p>Uma apresentação das ferramentas presentes no kernel e no userspace para isolamento de aplicações. Serão discutidas tecnologias em constante desenvolvimento, como systemd, lxc e docker, com apresentações práticas da utilização no desenvolvimento de sistemas e discussão das vantagens e desvantagens dessas tecnologias.</p>
+                        </span>
+                        <h3 class="speaker-name">Bruno Barcarol Guimarães</h3>
+                        <span class="speaker-bio">
+                            <p>Formado em Bacharelado em Ciência da Computação pela Universidade de Caxias do Sul. Participação em projetos de pesquisa nas áreas de Computação Gráfica e Inteligência Artificial. Programador e Administrador de Sistemas na Universidade de Caxias do Sul. Palestrante regular em eventos como o TcheLinux e FISL.</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-4" class="speech-container">
+                    <span class="speaker-photo">
+                      <img itemprop="image" alt="Renato Suero" src="http://www.gravatar.com/avatar/9c168e5e36a639321f44c4ce21ea7fcf?s=200" class="photo">
+                    </span>
+                    <!-- <span class="speech-time">09h15</span> -->
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Aplicação dinâmica com BackboneJS
+                        </h3>
+                        <span class="speech-description">
+                            <p>Mostrar os conceitos da biblioteca BackboneJS e aplicar o conhecimento criando uma TodoList. A proposta da palestra é que as pessoas saiam sabendo como utilizar o BackboneJS em seus projetos, tornando suas aplicações dinâmicas.</p>
+                        </span>
+                        <h3 class="speaker-name">Renato Suero</h3>
+                        <span class="speaker-bio">
+                            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas pela ESAMC  Sorocaba-SP em 2011. Escreve código há mais de uma década, passando por várias ferramentas e plataformas(Já programei em Delphi =D ).</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-5" class="speech-container">
+                    <span class="speaker-photo">
+                      <img itemprop="image" alt="Giovane Liberato" src="http://www.gravatar.com/avatar/459565260da0ec7d06808c793c9c3d7d?s=200" class="photo">
+                    </span>
+                    <!-- <span class="speech-time">09h15</span> -->
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            Functional Python
+                        </h3>
+                        <span class="speech-description">
+                            <p>O objetivo desta palestra é mostrar o poder da legibilidade do python combinado com a simplicidade da programação funcional. Com conceitos que vão além de lambdas, maps e reductions, apresentarei como utilizar programação funcional no dia a dia do desenvolvimento e quais os benefícios de performance, legibilidade e reuso de código, entre outros.</p>
+                        </span>
+                        <h3 class="speaker-name">Giovane Liberato</h3>
+                        <span class="speaker-bio">
+                            <p>Giovane Liberato é consultor desenvolvedor na ThoughtWorks. Apaixonado por educação e conhecimento, é organizador dos eventos StartupVale, AgileVale, GDG Vale do Paraíba, RuPy Brazil, Python Vale. Atualmente trabalha no projeto Pixelated, uma plataforma de email segura e open source.</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="speech-6" class="speech-container">
+                    <span class="speaker-photo">
+                      <img itemprop="image" alt="Matheus Pereira" src="http://www.gravatar.com/avatar/33ed2f86d2c3d6cf07e4d2e07a1c573e?s=200" class="photo">
+                    </span>
+                    <!-- <span class="speech-time">09h15</span> -->
+                    <div class="speech-info">
+                        <h3 class="speech-title">
+                            CoPPla - Plataforma para aprendizagem colaborativa em Plone
+                        </h3>
+                        <span class="speech-description">
+                            <p>Communities of Practice Plataform (CoPPla) é uma plataforma livre desenvolvida utilizando uma série de tecnologias open source como Python/Zope/Plone, RequireJS, Sass/Compass e mantida em um repositório Git no Bitbucket.</p>
+                            <p>Voltada para a construção de comunidades de prática virtuais, as comunidades de prática já foram utilizadas em projetos de grande escala, em nível nacional e internacional, como:</p>
+                            <ul>
+                                <li>Cooperação Tripartite - Brasil / Cuba / Haiti</li>
+                                <li>Formação em Educação Permanente em Saúde - EPS em Movimento</li>
+                                <li>Caminhos do Cuidado  - Formação em saúde mental e drogas para agentes comunitários de saúde e auxiliares/técnicos de enfermagem da Atenção Básica</li>
+                                <li>Vivências e Estágios na Realidade do SUS (VERSUS)</li>
+                                <li>OTICS - Observatório de Tecnologias de Informação e Comunicação em Sistemas e Serviços de Saúde</li>
+                            </ul>
+                            <p>O objetivo do trabalho é apresentar as Comunidades de Prática e as ferramentas utilizadas, em especial Python, Zope e Plone, compartilhando as experiências adquiridas durante seu desenvolvimento e utilização.</p>
+                        </span>
+                        <h3 class="speaker-name">Matheus Pereira</h3>
+                        <span class="speaker-bio">
+                            <p>Desenvolvedor de software no Instituto Communitas, Mestrando em Inteligência Artificial na UFRGS, bacharel em Ciência da Computação pela UCS.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
         </section>
         <section id="local">
-        <div class="container">
-          <h2 class="subtitle">Local</h2>
-          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3483.682705366813!2d-51.218478999999995!3d-29.174021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94dbf%3A0x3398f5530c56890c!2sFtec+Faculdades!5e0!3m2!1spt-BR!2s!4v1406386338228" width="100%" height="450"></iframe>-->
-          <p>
-            Universidade de Caxias do sul - Auditório do bloco 46
-          </p>
-          <p>
-            Rua Francisco Getúlio Vargas, 1130 - CEP 95070-560
-            Caxias do Sul - Rio Grande do Sul
-          </p>
+            <div class="container">
+              <h2 class="subtitle">Local</h2>
+              <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3483.682705366813!2d-51.218478999999995!3d-29.174021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94dbf%3A0x3398f5530c56890c!2sFtec+Faculdades!5e0!3m2!1spt-BR!2s!4v1406386338228" width="100%" height="450"></iframe>-->
+              <p>
+                Universidade de Caxias do sul - Auditório do bloco 46
+              </p>
+              <p>
+                Rua Francisco Getúlio Vargas, 1130 - CEP 95070-560
+                Caxias do Sul - Rio Grande do Sul
+              </p>
 
-          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
-          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
-          <div id="directions-panel"></div>
-        </div>
+              <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+              <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+              <div id="directions-panel"></div>
+            </div>
         </section>
         <section id="apoio">
             <div class="container">
                 <h2 class="subtitle">Apoio</h2>
-                    <ul class="apoio-list">
-                      <li class="apoio-item" itemscope="" itemtype="http://schema.org/Organization">
-                        <a href="http://goo.gl/dix3K3" title="Seja um apoiador" class="apoio-logo apoio-link" itemprop="url">
-                          <span class="glyphicon glyphicon-plus"></span>
+                <ul class="apoio-list">
+                    <li class="apoio-item">
+                        <a href="http://www.flexxo.com.br/" title="Flexxo" class="apoio-logo apoio-link" target="_blank">
+                            <img src="images/flexxo.png" alt="Flexxo" class="photo">
                         </a>
-                      </li>
-                    </ul>
+                    </li>
+                    <li class="apoio-item">
+                        <a href="http://www.pull4up.com.br/" title="Flexxo" class="apoio-logo apoio-link" target="_blank">
+                            <img src="images/pull4up.png" alt="Flexxo" class="photo">
+                        </a>
+                    </li>   
+                    <li class="apoio-item">
+                        <a href="http://ucs.br/" title="UCS" class="apoio-logo apoio-link" target="_blank">
+                            <img src="images/ucs.png" alt="UCS" class="photo">
+                        </a>
+                    </li>
+                    <li class="apoio-item" itemscope="" itemtype="http://schema.org/Organization">
+                        <a href="http://goo.gl/dix3K3" title="Seja um apoiador" class="apoio-logo apoio-link" itemprop="url">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     <footer>
@@ -124,6 +312,7 @@
                     <ul class="list-inline" id="footer-menu">
                         <li class="active"><a href="#">PyCaxias</a></li>
                         <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
                         <li><a href="#local">Local</a></li>
                         <li><a href="#apoio">Apoio</a></li>
                     </ul>
