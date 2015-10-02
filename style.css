@@ -118,37 +118,39 @@ h2.subtitle {
 	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
 }
 #search-route {
-  width: 100%;
-  margin: auto;
-  padding: 0 5px;
-  margin: 10px 0px 20px 0px;
+    width: 100%;
+    margin: auto;
+    padding: 0 5px;
+    margin: 10px 0px 20px 0px;
 }
 #directions-panel {
-  box-shadow: 0px 5px 10px 0px #838888;
-  width: 100%;
-  margin: auto;
-  margin-top: -10px;
+    box-shadow: 0px 5px 10px 0px #838888;
+    width: 100%;
+    margin: auto;
+    margin-top: -10px;
 }
 #directions-panel .adp-directions {
-  width: 100%;
+    width: 100%;
 }
 #directions-panel .adp-directions td {
-  margin: 50px;
+    margin: 50px;
 }
 
 #map_canvas {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
-  padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+    padding: 20px;
 }
+
 @media (max-width: 480px) {
     .logo-link {
         font-size: 2em;
         letter-spacing: -0.04em;
     }
 }
+
 #apoio {
     margin-top: 50px;
     padding-top: 0px;
@@ -161,10 +163,12 @@ footer .github, footer .github p{
 footer {
     padding-bottom: 0;
 }
+
 .apoio-item, .partner-item {
     display: inline-block;
     margin: 0 30px 30px 0;
 }
+
 .apoio-link, .partner-link {
     display: block;
     width: 170px;
@@ -173,16 +177,19 @@ footer {
     vertical-align: middle;
     line-height: 170px;
 }
+
 .photo {
     max-width: 100%;
     position: relative;
     top: -1px;
 }
+
 .apoio-link, .partner-link {
     background: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
+
 a.apoio-logo.apoio-link:hover {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 1.15);
 }
@@ -211,9 +218,8 @@ a.apoio-logo.apoio-link:hover {
 }
 
 .speech-info{
-  display: inline-block;
-  width: 89%
-
+    display: inline-block;
+    width: 89%
 }
 
 .speech-info > *{
@@ -238,14 +244,12 @@ a.apoio-logo.apoio-link:hover {
     display:block;
 }
 
-
 .speaker-photo {
     height: 120px;
     width: 120px;
     display: inline-block;
     vertical-align: top;
 }
-
 
 .speaker-photo .photo {
     border-radius: 50%;
@@ -258,11 +262,11 @@ a.apoio-logo.apoio-link:hover {
     position: relative;
     top: -1px;
 }
+
 img {
     border: 0 none;
     vertical-align: inherit;
 }
-
 
 .show-info, .hide-info{
     margin-left: 5px;
@@ -270,7 +274,6 @@ img {
     outline: 0;
     text-decoration: none;
 }
-
 
 .show-info:focus, .hide-info:focus{
     margin-left: 5px;
@@ -302,4 +305,10 @@ img {
 
 .carousel-indicators{
   bottom: 0;
+}
+
+.evento-anterior{
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    padding: 15px;
 }
