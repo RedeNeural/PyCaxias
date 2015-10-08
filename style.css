@@ -61,7 +61,7 @@ header {
 	text-decoration: none;
 }
 
-.call-action-area .call-action-link, {
+.call-action-area .call-action-link {
 	background-color: #fddd52;
 	background-image: -moz-linear-gradient(top, #fddd52 30%, #f0a303 150%);
 	background-image: -webkit-linear-gradient(top, #fddd52 30%, #f0a303 150%);
@@ -73,7 +73,7 @@ header {
 	border-radius: 40px;
 }
 
-.call-action-area .call-action-link, {
+.call-action-area .call-action-link {
 	position: relative;
 	cursor: pointer;
 	display: inline-block;
