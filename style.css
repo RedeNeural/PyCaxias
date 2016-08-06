@@ -325,3 +325,11 @@ img {
     border-radius: 5px;
     padding: 15px;
 }
+
+.evento-anterior, ul{
+    margin-bottom: 0px;
+}
+
+.evento-anterior, li{
+    list-style-type: none;
+}
