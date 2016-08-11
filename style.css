@@ -34,7 +34,6 @@ header {
 	background-color: #2b2b2b;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-    box-shadow: 10px 10px 250px 100px #000 inset;
 }
 
 #map_canvas { 
