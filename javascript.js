@@ -23,11 +23,10 @@ $(document).ready(function() {
 
     $('#buscar_caminho').on('click', function(e) {
         e.preventdefault()
-        if (navigator.geolocation) { 
+        if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
 
-            var point = new google.maps.LatLng(position.coords.latitude, 
-                                        position.coords.longitude);
+            var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
             calcRoute(point);
             });
         }
@@ -51,7 +50,7 @@ $(document).ready(function() {
     var directionsDisplay;
     var directionsService = new google.maps.DirectionsService();
     var map;
-    var ftec = new google.maps.LatLng(-29.163028, -51.147218);
+    var ftec = new google.maps.LatLng(-29.1738524, -51.2208893);
     directionsDisplay = new google.maps.DirectionsRenderer();
     var mapOptions = {
       zoom:15,
@@ -69,7 +68,7 @@ $(document).ready(function() {
     var marker = new google.maps.Marker({
                   position: ftec,
                   map: map,
-                  title:"Universidade de Caxias do sul - Auditório do bloco 46"
+                  title:"Uniftec - Auditório"
     });
 
     function calcRoute(starte) {
@@ -104,7 +103,7 @@ $(document).ready(function() {
 
     document.getElementById("search-route").addEventListener("keypress", function(e){
         if (e.keyCode == 13) {
-            calcRoute(); 
+            calcRoute();
             return false;
         }
     });
