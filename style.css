@@ -1,10 +1,10 @@
-html { 
-    height: 100% 
+html {
+    height: 100%
 }
 
-body { 
-    height: 100%; 
-    margin: 0; 
+body {
+    height: 100%;
+    margin: 0;
     padding: 0;
     position: relative;
 }
@@ -31,13 +31,13 @@ p {
 header {
 	padding: 0px 0 62px;
 	text-align: center;
-	background-color: #000;
+	background-color: #ccc;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
 
-#map_canvas { 
-    height: 100% 
+#map_canvas {
+    height: 100%
 }
 
 .logo-name{
@@ -55,7 +55,7 @@ header {
 }
 
 .tagline, .logo-link, .logo-link:hover {
-	color: #fff;
+	color: #000;
 	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 }
@@ -299,7 +299,7 @@ img {
 }
 
 .hide-info-desc{
-    margin-left: 0px; 
+    margin-left: 0px;
 }
 
 .schedule-slot a{
