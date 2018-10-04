@@ -31,7 +31,8 @@ p {
 header {
 	padding: 0px 0 62px;
 	text-align: center;
-	background-color: #ccc;
+    background-color: #2b5b84;
+    background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -55,7 +56,7 @@ header {
 }
 
 .tagline, .logo-link, .logo-link:hover {
-	color: #000;
+	color: #efefef;
 	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 }
@@ -332,3 +333,4 @@ img {
 .evento-anterior, li{
     list-style-type: none;
 }
+
