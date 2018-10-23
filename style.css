@@ -495,6 +495,22 @@ img {
     border: none;
     font-size: 25px;
 }
+.btn-details{
+    font-family: Advent Pro, 'Courier New', Courier, monospace;
+    background: none;
+    background-color: #2b5b84;
+    color: #e7e7e7;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.btn-details:hover{
+    font-family: Advent Pro, 'Courier New', Courier, monospace;
+    background: none;
+    background-color: #e7e7e7;
+    color: #2b5b84;
+    border: none;
+}
 
 .btn-grey{
     font-family: Advent Pro, 'Courier New', Courier, monospace;
@@ -540,4 +556,10 @@ img {
     font-family: Advent Pro, 'Courier New', Courier, monospace;
     color: #cc7f0a;
     text-decoration: none;
+}
+
+.icon-down{
+    color: white;
+    font-size: 46px;
+    animation: is-bouncing-rotated-90cw 1.5s ease-out infinite !important;
 }
