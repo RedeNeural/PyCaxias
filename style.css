@@ -357,6 +357,11 @@ img {
     font-size:20px;
 }
 
+#evento{
+    margin-bottom: 150px;
+    position: relative;
+}
+
 #inscricoes{
     padding-top: 150px;
     position: relative;
