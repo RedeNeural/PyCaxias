@@ -71,7 +71,7 @@
                         <li><a href="#evento">O Evento</a></li>
                         <li><a href="#chamada-palestras">Chamada de Palestras</a></li>
                         <li><a href="#inscricoes">Inscrições</a></li>
-                        <!-- <li><a href="#programacao">Programação</a></li> -->
+                        <li><a href="#programacao">Programação</a></li>
                         <li><a href="#local">Local</a></li>
                         <li><a href="#apoio">Apoio</a></li>
                         <li><a href="#contato">Contato</a></li>
@@ -97,6 +97,7 @@
         <section id="evento">
             <div class="container">
                 <h2 class="subtitle">Sobre o evento</h2>
+
                 <p>
                     O pycaxias é um ambiente convidativo, rodeado de palestras e tutoriais incríveis, onde o público poderá participar de momentos descontraídos, além de fazer um network fantástico com muitas pessoas e algumas empresas.
                 </p>
@@ -110,13 +111,14 @@
                     Esse ano o evento aumentou de tamanho e terá o sábado todo de interações e muito conhecimento. Estamos diversificando, não serão palestras somente sobre python, vamos ter palestras sobre empreendedorismo, comunidade, carreira, serão diversos temas abordados.
                 </p>
 
-                <!-- <p>
-                    A participação no evento é gratuita, porém os participantes são incentivados a levar <strong>2kg de alimentos</strong> não perecíveis (exceto sal), que serão doados a uma instituição beneficente.
-                </p> -->
+                <p>
+                    A participação no evento é paga, porém os participantes são incentivados a levar <strong>2kg de alimentos</strong> não perecíveis (exceto sal), que serão doados a uma instituição beneficente.
+                </p>
 
             </div>
         </section>
 
+        <!--
         <section id="chamada-palestras" >
             <div class="container">
                 <h2 class="subtitle">Chamada de Palestras</h2>
@@ -130,7 +132,7 @@
                 </p>
                 <p>
                     Se para alguma das perguntas sua resposta for sim, clique e submeta sua palestra ou workshop,
-                    se ela não conseguir entrar derrepente possa ser uma boa historia no Coffee break.
+                    se ela não conseguir entrar de rrepente possa ser uma boa historia no Coffee break.
                 </p>
                 <div class="row">
                     <div class="col-sm-12 text-center">
@@ -140,6 +142,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <section id="inscricoes" >
             <div class="container">
@@ -155,19 +158,22 @@
             </div>
         </section>
 
-        <!--
         <section id="programacao">
             <div class="container">
+
                 <h2 class="subtitle">Palestras Auditório</h2>
+
                 <div class="table-responsive">
+
                     <table class="table table-bordered">
                         <thead>
                             <tr>
                             <th class="schedule-time text-center">Horário</th>
-                            <th class="schedule-slot text-center">Sala 1</th>
-                            <th class="schedule-name text-center">Sala 2</th>
+                            <th class="schedule-slot text-center">Auditório</th>
+                            <th class="schedule-name text-center">Sala Workshop</th>
                             </tr>
                         </thead>
+
                         <tbody>
                             <tr class="schedule-other lightning-talk">
                                 <td class="schedule-time text-center">8:30</td>
@@ -180,8 +186,8 @@
                             <tr class="schedule-other">
                                 <td class="schedule-time text-center">9:00</td>
                                 <td class="schedule-slot text-center" colspan="2">
-                                    Palestra Sebrae<br>
-                                    <small>Renan Rezende Leal</small><br>
+                                    Por que usar Pyenv + Pipenv?<br>
+                                    <small>Joelmir Ribacki</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-1">
                                         Detalhes
                                     </button>
@@ -190,13 +196,13 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Palestra Sebrae</h4>
+                                                    <h4 class="modal-title" id="myModalLabel">Por que usar Pyenv + Pipenv?</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <h5>Palestrante:</h5>
-                                                    <p></p>
+                                                    <p>Tech Lead/Data Engineering Python na Devgrid (www.devgrid.co.uk). Atuando com projetos de IoT, Desagregação de energia, soluções com grande volume de dados e integrações.</p>
                                                     <h5>Palestra:</h5>
-                                                    <p></p>
+                                                    <p>Como montar um ambiente de desenvolvimento sem dor de cabeça, gerenciar vários projetos no mesmo computador, controlar dependências e versões de pacotes, e garantir que o sistema de produção não vai quebrar após uma atualização de pacotes.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -211,64 +217,8 @@
                                 <td class="schedule-time text-center">10:20</td>
 
                                 <td class="schedule-slot text-center">
-                                    Uma história sobre parcerias, recrutamento, inteligencia artificial e python<br>
-                                    <small>Thiarlei Macedo</small><br>
-                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-10">
-                                        Detalhes
-                                    </button>
-                                    <div class="modal fade" id="modal-10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Uma história sobre parcerias, recrutamento, inteligencia artificial e python. </h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <h5>Thiarlei Macedo:</h5>
-                                                    <ul style="font-weight: 200">
-                                                      <li>CEO da Enttry Software e da Skeel Recrutamento</li>
-                                                      <li>Inteligente;</li>
-                                                      <li>
-                                                        Presidente do TrinoPolo (Polo de TI da Serra Gaúcha); </li>
-                                                        <li>Professor de Engenharia de Software e Projetos Empreendedores da Faculdade de Tecnologia Ftec;</li>
-                                                        <li>Professor de Pós Graduação em Gestão da Inovação, Métodos Ágeis e Marketing Digital na FSG;</li>
-                                                        <li>Consultor em inovação, marketing digital, startups e tecnologia da informação.</li>
-                                                        <li>Formação acadêmica:</li>
-                                                        <li>Mestre em Administração (PPGA/UFRGS);</li>
-                                                        <li>MBA Executivo Internacional (UFRGS/FSG);</li>
-                                                        <li>Especialista em Startups e Vale do Silício (Concordia Ventures/USA);</li>
-                                                        <li>Pós Graduado em Teste e Garantia da Qualidade de Software (Feevale);</li>
-                                                        <li>Graduado em Desenvolvimento de Sistemas de Informação (Ftec);</li>
-                                                        <li>Técnico em eletrônica (ETFPel);</li>
-                                                        <li>Certified Tester of Brazilian Software Testing Qualifications Board (BSTQB);</li>
-                                                        <li>Content Marketing Specialist (Digital Marketer)</li>
-                                                    </ul>
-                                                    <h5>Uma história sobre parcerias, recrutamento, inteligencia artificial e python:</h5>
-                                                    <p>
-                                                      <ul style="font-weight: 200">
-                                                        <li>
-                                                        Apresentação do case de construção de uma startup a partir de um grupo de empresas e a criação do MVP.
-                                                        </li>
-                                                      </ul>
-
-                                                    </p>
-                                                    <div class="modal fade " id="minhaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                                        <div class="modal-dialog modal-lg" role="document">
-                                                            <div class="modal-content">
-                                                                <div class="modal-body">
-                                                                    <div id="conteudoModal"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="schedule-slot text-center">
-                                    Construindo sites com Django<br>
-                                    <small>Eliane Isadora Faveron Maciel</small><br>
+                                    Python para Automatizar o Controle Financeiro<br>
+                                    <small>Lucas Rangel Cezimbra</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-2">
                                         Detalhes
                                     </button>
@@ -277,21 +227,36 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h5 class="modal-title" id="myModalLabel">Construindo sites com Django</h5>
+                                                    <h4 class="modal-title" id="myModalLabel">Python para Automatizar o Controle Financeiro</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Eliane Isadora Faveron Maciel:</h5>
-                                                    <p>Estudante de Ciência da Computação na Universidade de Caxias do Sul.
-                                                        Trabalho atualmente como Desenvolvedora Web na NL Informática -
-                                                        Cake ERP. Organizadora do grupo PyLadies Caxias do Sul e eventos Django Girls Caxias do Sul e
-                                                        Django Girls Bento Gonçalves.
-                                                    </p>
-                                                    <h5>Construindo sites com Django:</h5>
-                                                    <p>Django é um framework para aplicações web gratuito e escrito em Python.
-                                                        Com o Django é possível criar sistemas simples como um blog, e até sistemas mais completos.
-                                                        Nesta palestra veremos como criar uma aplicação web simples mostrando as
-                                                        funcionalidades e principais recursos do framework.
-                                                    </p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Porto-alegrense. Apaixonado por tecnologia. Desenvolvedor de software há 6 anos, quase sempre trabalhando com web, nesses anos trabalhei com algumas linguagens diferentes. Sempre buscando escrever o código mais simples que gere o maior retorno possível.</p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>Nessa paletra mostrarei como podemos utilizar o Python e suas ferramentas para automatizar a extração dos seus dados bancários e criar um sistema de controle financeiro que é preenchido automaticamente. Assim você poderá dedicar tempo ao mais importante que é analisar suas finanças ao invés de gastar tempo preenchendo planilhas e/ou sistemas. Além disso você poderá assumir o controle sobre os seus dados para utiliza-los como quiser.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="schedule-slot text-center" rowspan="2">
+                                    Workshop - Python para iniciantes<br>
+                                    <small>Perceu Bertoletti</small><br>
+                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-3">
+                                        Detalhes
+                                    </button>
+                                    <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Workshop - Python para iniciantes</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5>Ministrante</h5>
+                                                    <p>"Sou entusiasta de tecnologia e trabalho com programação desde 2013, já trabalhei um pouco com infra. http://perceu.github.io/me"</p>
+                                                    <h5>Conteúdo</h5>
+                                                    <p></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -301,79 +266,8 @@
                             <tr class="schedule-other">
                                 <td class="schedule-time text-center">11:00</td>
                                 <td class="schedule-slot text-center">
-                                    Mercado de trabalho de python fora do Brasil<br>
-                                    <small>Eduardo Erlo</small><br>
-                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-3">
-                                        Detalhes
-                                    </button>
-                                    <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Mercado de trabalho de python fora do brasil</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <h5>Eduardo Erlo:</h5>
-                                                    <p>
-                                                        Engenheiro de software com 9 anos de experiência, 3 deles trabalhando para
-                                                        empresas de fora do Brasil. Meu foco como profissional sempre foi em tecnologias open-source,
-                                                        principalmente as relacionadas com Python.
-                                                        Dentre outras empresas, trabalhei como desenvolvedor e analista de sistemas Python na UCS por 4 anos,
-                                                        engenheiro de software na Gymglish (gymglish.com) por 2 anos, e atualmente
-                                                        trabalho na equipe de integrações de e-commerce da AdRoll (adroll.com) através da
-                                                        BairesDev (bairesdev.com).
-                                                    </p>
-                                                    <h5>Mercado de trabalho de python fora do brasil:</h5>
-                                                    <p>
-                                                        Como está o mercado de trabalho com Python fora do Brasil? Você já se aventurou ou pretende seguir carreira internacional?
-                                                        Neste bate-papo eu pretendo compartilhar minhas experiências trabalhando para empresas do exterior, na França e nos Estados Unidos,
-                                                        mostrar meu ponto de vista do mercado de trabalho lá fora,
-                                                        dar dicas de como iniciar carreira internacional e até divulgar algumas oportunidades de emprego em empresas gringas :)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            <td class="schedule-name text-center"> Implementando CQRS com MediatR, Entity Framework e Dapper<br>
-                                    <small>Lenerson Nunes</small><br>
-                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-8">
-                                        Detalhes
-                                    </button>
-                                    <div class="modal fade" id="modal-8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h5 class="modal-title" id="myModalLabel">Implementando CQRS com MediatR, Entity Framework e Dapper</h5>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <h5>Lenerson Nunes:</h5>
-                                                    <p>Bacharel em Ciência da Computação, Consultor, Arquiteto de Software de aplicações .NET focado em boas práticas de desenvolvimento como TDD e DDD. Trabalha com a plataforma .NET desde 2007. Cofundador e organizador do .NET Caxias, comunidade .NET de Caxias do Sul e região.
-                                                    </p>
-                                                    <h5>Implementando CQRS com MediatR, Entity Framework e Dapper:</h5>
-                                                    <p>O padrão CQRS é conhecido por grande parte dos desenvolvedores, porém, a maioria sente dificuldade em implementar alguma solução utilizando-o. O intuito dessa palestra é desmistificar, através de um exemplo prático, a implementação do mesmo, onde será mostrada a separação entre comandos de escrita e requisições de leitura. Para isso, será utilizada a biblioteca MediatR que facilita a criação da estrutura CQRS, Entity Framework para o tratamento dos comandos e Dapper que realizará a leitura de dados
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                              </td>
-                            </tr>
-                            <tr class="schedule-other lightning-talk">
-                                <td class="schedule-time text-center">11:40</td>
-                                <td class="schedule-slot text-center">Lightning talks</td>
-                                <td class="schedule-name text-center">Open space</td>
-                            </tr>
-                            <tr class="schedule-other lightning-talk">
-                                <td class="schedule-time text-center">12:00</td>
-                                <td class="schedule-slot text-center" colspan="2">Almoço</td>
-                            </tr>
-                            <tr class="schedule-other">
-                                <td class="schedule-time text-center">13:40</td>
-                                <td class="schedule-slot text-center">BDD com Python<br>
-                                    <small>Daniel Bastos</small><br>
+                                    Criando API REST com Django Rest Framework<br>
+                                    <small>Eliane Isadora Faveron Maciel</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-4">
                                         Detalhes
                                     </button>
@@ -382,36 +276,31 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">BDD com Python</h4>
+                                                    <h5 class="modal-title" id="myModalLabel">Criando API REST com Django Rest Framework</h5>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Daniel Bastos:</h5>
-                                                    <p>
-                                                        Desenvolvedor web desde 2008 e pythonista desde 2011.
-                                                        Atuo (menos do que gostaria) nas comunidades locais de Python,
-                                                        organizando eventos para disseminar e reunir pessoas interessadas em
-                                                        interagir e conhecer mais sobre a tecnologia Python.
-                                                    </p>
-                                                    <h5>BDD com Python:</h5>
-                                                    <p>
-                                                        Um dos grandes desafios para quem trabalha na construção do produtos e sistemas digitais
-                                                        são os ruídos na comunicação entre a equipe técnica e a não-técnica.
-                                                        Nessa palestra pretendo apresentar o BDD
-                                                        como uma ferramenta que pode ser utilizada para reduzir os problemas de
-                                                        comunicação das equipes.
-                                                    </p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Estudante de Ciência da Computação na Universidade de Caxias do Sul. Desenvolvedora de Sistemas no CAKE ERP. Mentora na Codenation Mentorship Community. Organizadora do PyLadies Caxias do Sul, Django Girls Caxias do Sul e Django Girls Bento Gonçalves.</p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>Nesta palestra vou apresentar uma criação de API utilizando Django REST Framework.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="schedule-name text-center" rowspan="3">Dask: Analise de dados paralela em python </td>
+                            </tr>
+                            <tr class="schedule-other lightning-talk">
+                                <td class="schedule-time text-center">11:40</td>
+                                <td class="schedule-slot text-center" colspan="2">Lightning talks</td>
+                            </tr>
+                            <tr class="schedule-other lightning-talk">
+                                <td class="schedule-time text-center">12:00</td>
+                                <td class="schedule-slot text-center" colspan="2">Almoço</td>
                             </tr>
                             <tr class="schedule-other">
-                                <td class="schedule-time text-center">14:20</td>
-                                <td class="schedule-slot text-center">
-                                    Manual de como Hackear o futuro <br>
-                                    <small>Jaqueline Trevizan</small><br>
+                                <td class="schedule-time text-center">13:30</td>
+                                <td class="schedule-slot text-center">Django: o que fazer depois do primeiro tutorial<br>
+                                    <small>Daniel Bastos</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-5">
                                         Detalhes
                                     </button>
@@ -420,33 +309,22 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Manual de como Hackear o futuro</h4>
+                                                    <h4 class="modal-title" id="myModalLabel">Django: o que fazer depois do primeiro tutorial</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Jaqueline Trevizan:</h5>
-                                                    <p>
-                                                        Cursando Análise e desenvolvimento de sistemas na FSG, apaixonada por tecnologia.
-                                                        Apoia e incentiva o ensino de programação para crianças e a
-                                                        inclusão da mulher na área de TI.
-                                                    </p>
-                                                    <h5>Manual de como Hackear o futuro:</h5>
-                                                    <p>
-                                                        As crianças de hoje quando adultas irão
-                                                        trabalhar com profissões que ainda nem existem.
-                                                        Como podemos, hoje, já começarmos a
-                                                        prepará-las para esse futuro? Eu tenho uma ideia!!
-                                                    </p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Mais um programador Python que aproveita da interação com pessoas para descobrir novas possibilidades e resolver os problemas usando a tecnologia (ou não).</p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>Essa palestra busca expor para as pessoas, que estão iniciando em Django, alguns conceitos importantes sobre organização do projeto e bibliotecas que considero úteis e recomendo você manter sempre por perto.</p>
+                                                    <p>A palestra será baseada na minha experiência pessoal como desenvolver Python/Django, trazendo à luz alguns questionamento para debate, visando ajudar quem esta iniciando e aprender mais com a troca de experiência e pontos de vista diferentes.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr class="schedule-other">
-                                <td class="schedule-time text-center">15:00</td>
                                 <td class="schedule-slot text-center">
-                                    Desenvolvimento desktop com python<br>
-                                    <small>Perceu Bertoletti</small><br>
+                                    Como o MVP pode te ajudar<br>
+                                    <small>Regis Tomkiel</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-6">
                                         Detalhes
                                     </button>
@@ -455,37 +333,24 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Desenvolvimento desktop com python</h4>
+                                                    <h4 class="modal-title" id="myModalLabel">Como o MVP pode te ajudar</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Perceu Bertoletti:</h5>
-                                                    <p>
-                                                        Sou desenvolvedor web, hoje atuo como instrutor, consultor e
-                                                        desenvolvedor em empresas de software,
-                                                        ativo em algumas comunidades,
-                                                        gosto de partilhar conhecimento,
-                                                        e estou sempre disponível para trocar idéias </p>
-                                                    <h5>Desenvolvimento desktop com python:</h5>
-                                                    <p>
-                                                        A ideia e mostrar alternativas de como criar interfaces,
-                                                        fora e dentro do browser, mas que não seja necessário servir
-                                                        essas interfaces num servidor.
-                                                    </p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Desenvolvedor Web, criador de conteúdo e proprietário da Dose Extra.</p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>Vamos conversar sobre MVP (Minimum Viable Product) e como ele pode ajudar, transformado ideias de sua cabeça em projetos viáveis.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="schedule-other lightning-talk">
-                                <td class="schedule-time text-center">15:40</td>
-                                <td class="schedule-slot text-center" colspan="2">Coffee break</td>
-                            </tr>
                             <tr class="schedule-other">
-                                <td class="schedule-time text-center">16:10</td>
+                                <td class="schedule-time text-center">14:10</td>
                                 <td class="schedule-slot text-center">
-                                    Uma introdução não-gentil ao stream processing <br>
-                                    <small>Julio Biason</small><br>
+                                    Evolução da plataforma .NET<br>
+                                    <small>Rafael Persch</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-7">
                                         Detalhes
                                     </button>
@@ -494,36 +359,36 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Uma introdução não-gentil ao stream processing</h4>
+                                                    <h4 class="modal-title" id="myModalLabel">Evolução da plataforma .NET</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Julio Biason:</h5>
-                                                    <p></p>
-                                                    <h5>Uma introdução não-gentil ao stream processing:</h5>
-                                                    <p></p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Formado em Análise e Desenvolvimento de Sistemas com especialização em Tecnologias para Aplicações WEB. Sócio e Desenvolvedor Full Stack na Dosoft Sistemas, Instrutor e entusiasta de tecnologia com foco em linguagens de programação. Trabalha com a plataforma .NET desde 2012 </p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>A plataforma .NET evoluiu muito com o passar dos anos, especificamente nos últimos cinco, será que você sabe tudo o que mudou ou o que estar por vir?  </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="schedule-slot text-center">
-                                    Introdução aos perfiladores do python <br>
-                                    <small>Juciano Cardoso</small><br>
-                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-13">
+                                    Python como alternativa ao Bash/Shell Script<br>
+                                    <small>Eduardo Silveira</small><br>
+                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-8">
                                         Detalhes
                                     </button>
-                                    <div class="modal fade" id="modal-13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id="modal-8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                         <div class="modal-dialog modal-lg" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Introdução aos perfiladores do python</h4>
+                                                    <h4 class="modal-title" id="myModalLabel">Python como alternativa ao Bash/Shell Script</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Juciano Cardoso:</h5>
-                                                    <p>Estudante de ciencias da computação pela Universidade de Caxias do sul com 3 anos de experiência profissional com python, com ênfase em microservices e IOT.</p>
-                                                    <h5>Introdução aos perfiladores do python:</h5>
-                                                    <p>apresentará os principais perfiladores para python, com exemplos práticos.</p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Bacharel em Sistemas de Informação pela Universidade de Caxias do Sul, trabalha a 12 anos com servidores GNU/Linux, principalmente com gestão de Internet. Admirador do software livre, foi moderador do Viva o Linux durante quase 7 anos, entre 2009 e 2015. Também é podcaster e idealizador do site peloamordedeus.org.br.</p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>Em alguns casos, é mais rápido e fácil trabalhar no Linux com scripts em Python do que em Bash. Vamos analisar algumas situações em que o Python acelera o processo para realizar aquelas tarefas repetitivas do dia a dia.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -531,10 +396,63 @@
                                 </td>
                             </tr>
                             <tr class="schedule-other">
-                                <td class="schedule-time text-center">16:50</td>
-                                <td class="schedule-slot text-center">PyLadies e Django Girls: Mulheres aprendendo e ensinando a programar
-                                     <br>
-                                    <small>PyLadies</small><br>
+                                <td class="schedule-time text-center">14:50</td>
+                                <td class="schedule-slot text-center">
+                                    IOTA - introdução ao Tangle, fim do Blockchain.<br>
+                                    <small>Everton (Tom) Costa</small><br>
+                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-9">
+                                        Detalhes
+                                    </button>
+                                    <div class="modal fade" id="modal-9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">IOTA - introdução ao Tangle, fim do Blockchain.</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Desenvolvedor Mobile, integrante da comunidade Python, Tchê Linux, Rede Neural, IOTAbr, Ionic, community leader Startup Weekend e empreendedor.</p>
+                                                    <h5>Palestra:</h5>
+                                                    <p>Abordagem aos sistemas de registros distribuídos, introdução ao Tangle e breve comparativo com o Blockchain. As tecnologias do futuro, a economia das coisas, M2M e o papel da criptomoeda IOTA.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="schedule-slot text-center" rowspan="4">
+                                    Workshop: Docker para iniciantes<br>
+                                    <small>Cristiano dos Santos Diedrich</small><br>
+                                    <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-10">
+                                        Detalhes
+                                    </button>
+                                    <div class="modal fade" id="modal-10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Python como alternativa ao Bash/Shell Script</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5>Ministrante:</h5>
+                                                    <p>Formado em sistemas de informação, trabalho atualmente como SRE na uMove.me, uma plataforma no code para criação de app B2B, atuo na pesquisa e desenvolvimento de novas soluções. Sou apaixonado por linux e tecnologias open-source, áreas que conheço a mais de 10 anos.</p>
+                                                    <h5>Conteúdo:</h5>
+                                                    <p>Neste workshop entenderemos de onde vem os containers, como funciona a plataforma Docker, seus beneficios e claro vamos aprender como containerizar aplicações e tirar o melhor proveito dessa tecnologia que está em alta atualmente.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="schedule-other lightning-talk">
+                                <td class="schedule-time text-center">15:30</td>
+                                <td class="schedule-slot text-center">Coffee break</td>
+                            </tr>
+                            <tr class="schedule-other">
+                                <td class="schedule-time text-center">16:00</td>
+                                <td class="schedule-slot text-center">
+                                    Home Office é tão bom assim?<br>
+                                    <small>Jônatas Acosta Chagas Júnior</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-11">
                                         Detalhes
                                     </button>
@@ -543,20 +461,24 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">PyLadies e Django Girls: Mulheres aprendendo e ensinando a programar</h4>
+                                                    <h4 class="modal-title" id="myModalLabel">Home Office é tão bom assim?</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>PyLadies</h5>
-                                                    <p>PyLadies é um grupo que incentiva e apoia mulheres na área de tecnologia através da linguagem python. Nessa palestra iremos compartilhar nossa trajetória durante este primeiro ano do grupo, mostrando que é possível aprender ensinando</p>
-                                                    <h5>Palestrantes:</h5>
-                                                    <p>PyLadies Caxias do Sul. Eliane Maciel: Estudante de Ciência da Computação na Universidade de Caxias do Sul. Trabalho atualmente como Desenvolvedora Web na NL Informática - Cake ERP. Organizadora do grupo PyLadies Caxias do Sul e eventos Django Girls Caxias do Sul e Django Girls Bento Gonçalves. Jaqueline Trevizan: Cursando Análise e desenvolvimento de sistemas na FSG, apaixonada por tecnologia. Apoia e incentiva o ensino de programação para crianças e a inclusão da mulher na área de TI.</p>
+                                                    <h5>Palestrante</h5>
+                                                    <p>Trabalho atualmente com marketing digital, tenho uma agência a mais de 5 anos em Bento Gonçalves, atendo várias empresas no RS. Sou webdesign com conhecimento em, html,css,js, php. Trabalho home office a mais de 2 anos, e sou um entusiasta dessa modalidade de trabalho.</p>
+                                                    <h5>Palestra</h5>
+                                                    <p>Tive uma agência no centro de Bento Gonçalves por mais de 2 anos, recebi um único cliente durante todo esse tempo, não via mais razão para continuar a investir tempo e dinheiro naquele local, migrei para um local menor, a mesma coisa aconteceu, sem clientes na empresa resolvi me dedicar ao trabalho em casa, sinceramente foi uma das melhores coisas que já fiz na minha vida, porém nem tudo são flores, os problemas vieram e continuam vindo. Vou dar minha opinião, mostrar pontos fortes e pontos fracos dessa modalidade que apesar de não ser a perfeita é a que mais se aproxima de meu ideal de emprego dos sonhos.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="schedule-name text-center"> Como melhorar sua carreira sem gastar nada!<br>
-                                    <small>Jonny William Deitos</small><br>
+                            </tr>
+                            <tr class="schedule-other">
+                                <td class="schedule-time text-center">16:40</td>
+                                <td class="schedule-slot text-center">
+                                    Thumbor: Performance e escalabilidade no processamento inteligente de imagens<br>
+                                    <small>Cristian Dean</small><br>
                                     <button type="button" class="btn btn-details" data-toggle="modal" data-target="#modal-12">
                                         Detalhes
                                     </button>
@@ -565,28 +487,25 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h5 class="modal-title" id="myModalLabel"> Como melhorar sua carreira sem gastar nada!</h5>
+                                                    <h4 class="modal-title" id="myModalLabel">Thumbor: Performance e escalabilidade no processamento inteligente de imagens</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h5>Jonny William Deitos:</h5>
-                                                    <p>Graduado em Desenvolvimento de Sistemas para Internet, CEO da Cosmun Softwares, Apaixonado por desenvolvimento mobile. Organizador do Rede Neural, comunidade de TI de Caxias do Sul e região.
-                                                    </p>
-                                                    <h5>Como melhorar sua carreira sem gastar nada!</h5>
-                                                    <p>Existem muitas formas para dar um upgrade na sua carreira, cursos diversos, workshops, faculdade, especialização, pós-graduação, mestrado e por aí vai. Como estamos muito envolvidos no dia a dia com projetos diversos, linguagens específicas, acabamos criando um universo particular. Agora como obter esse desenvolvimento pessoal e profissional gastanto muito pouco ou muitas vezes nada?
-                                                    </p>
+                                                    <h5>Palestrante:</h5>
+                                                    <p>Formado em Sistemas de Informação e entusiasta de tecnologia, atualmente trabalhando como desenvolvedor full-stack do time de interatividade na globo.com. Diariamente lidando com desafios voltados a performance, escalabilidade e resiliência de aplicações e sempre buscando aprender cada vez mais.</p>
+                                                    <h5>Palestra</h5>
+                                                    <p>O Thumbor é um projeto open source que nasceu e é amplamente utilizado na globo.com para processar de forma inteligente e servir mais de 1 bilhão de imagens por mês. Além de ser altamente extensível e escalável, o Thumbor foi desenvolvido em python, possui um conjunto de bibliotecas compatíveis com diversas linguagens e uma comunidade bastante ativa.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                              </td>
+                                </td>
                             </tr>
                             <tr class="schedule-other lightning-talk">
-                                <td class="schedule-time text-center">17:30</td>
-                                <td class="schedule-slot text-center">Lightning talks</td>
-                                <td class="schedule-name text-center">Open space</td>
+                                <td class="schedule-time text-center">17:20</td>
+                                <td class="schedule-slot text-center" colspan="2">Lightning talks</td>
                             </tr>
                             <tr class="schedule-other lightning-talk">
-                                <td class="schedule-time">18:00</td>
+                                <td class="schedule-time text-center">18:00</td>
                                 <td class="schedule-slot text-center" colspan="2">Encerramento</td>
                             </tr>
                         </tbody>
@@ -594,7 +513,6 @@
                 </div>
             </div>
         </section>
-        -->
 
         <!-- <section id="convidados">
             <div class="container">
