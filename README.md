@@ -1,4 +1,0 @@
-PyCaxias
-============
-
-www.pycaxias.org
