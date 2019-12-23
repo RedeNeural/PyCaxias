@@ -1,3 +1,7 @@
+output/
+.venv/
+.env
+__pycache__/
 *~
 *.swp
 *.sublime-project
