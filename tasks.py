@@ -48,7 +48,7 @@ def rebuild(c):
 @task
 def regenerate(c):
     """Automatically regenerate site upon file modification"""
-    c.run('pelican -r -s {settings_base}'.format(**CONFIG))
+    c.run('pelican -r -t theme -s {settings_base}'.format(**CONFIG))
 
 @task
 def serve(c):
@@ -74,7 +74,7 @@ def reserve(c):
 @task
 def preview(c):
     """Build production version of site"""
-    c.run('pelican -s {settings_publish}'.format(**CONFIG))
+    c.run('pelican -t theme -s {settings_publish}'.format(**CONFIG))
 
 @task
 def livereload(c):
@@ -103,7 +103,7 @@ def livereload(c):
 @task
 def publish(c):
     """Publish to production via rsync"""
-    c.run('pelican -s {settings_publish}'.format(**CONFIG))
+    c.run('pelican -t theme -s {settings_publish}'.format(**CONFIG))
     c.run(
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '
         '-e "ssh -p {ssh_port}" '
