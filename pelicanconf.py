@@ -8,6 +8,15 @@ SITENAME = 'PyCaxias'
 SITEURL = config('SITE_URL', default='')
 
 PATH = 'content'
+
+PLUGIN_PATHS = ['plugins/', ]
+PLUGINS=['sitemap',]
+
+SITEMAP = {
+    'format': 'xml',
+    'exclude': ['tags.html', 'categories.html', 'authors.html', 'archives.html']
+}
+ARTICLE_ORDER_BY = 'date'
 TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = 'pt-br'
@@ -20,11 +29,20 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-# LINKS = (('2014', '/old/2014/output/index.html'),)
+LINKS = (
+    ('2014','#'),
+    ('2015','#'),
+    ('2016','#'),
+    ('2018','#'),
+    ('2019','#'),
+)
 
 # Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
+SOCIAL = {
+    'instagram':'',
+    'twitter':'',
+    'facebook':'https://www.facebook.com/pycaxias',
+}
 
 DEFAULT_PAGINATION = False
 
