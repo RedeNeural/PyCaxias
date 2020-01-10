@@ -10,7 +10,7 @@ SITEURL = config('SITE_URL', default='')
 PATH = 'content'
 
 PLUGIN_PATHS = ['plugins/', ]
-PLUGINS=['sitemap',]
+PLUGINS=['sitemap','cname']
 
 SITEMAP = {
     'format': 'xml',
