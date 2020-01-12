@@ -23,7 +23,7 @@ class CnameGenerator(object):
     def generate_output(self, writer):
         path = os.path.join(self.output_path, 'CNAME')
         with open(path, 'w', encoding='utf-8') as fd:
-            fd.write(self.siteurl)
+            fd.write('pycaxias.org')
 
 def get_generators(generators):
     return CnameGenerator
