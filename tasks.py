@@ -101,15 +101,16 @@ def livereload(c):
 
 
 @task
-def publish(c):
-    """Publish to production via rsync"""
-    c.run('pelican -t theme -s {settings_publish}'.format(**CONFIG))
-    c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        '-e "ssh -p {ssh_port}" '
-        '{} {ssh_user}@{ssh_host}:{ssh_path}'.format(
-            CONFIG['deploy_path'].rstrip('/') + '/',
-            **CONFIG))
+def old(c, folder):
+    """generate old year of a master branch"""
+    os.makedirs(f'olds/{folder}')
+    shutil.copytree('content/', f'olds/{folder}/content')
+    shutil.copytree('plugins/', f'olds/{folder}/plugins')
+    shutil.copytree('theme/', f'olds/{folder}/theme')
+    shutil.copy('pelicanconf.py', f'olds/{folder}')
+    shutil.copy('publishconf.py', f'olds/{folder}')
+    shutil.copy('tasks.py', f'olds/{folder}')
+    print(folder)
 
 @task
 def gh_pages(c):
