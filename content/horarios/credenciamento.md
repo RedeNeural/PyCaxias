@@ -4,4 +4,4 @@ Category: horarios
 Tags: horarios
 Slug: credenciamento
 Author: Host
-Hora de pegar seu kit e camiseta caso tenha comprado, estamos providenciando bons brindes para você pegar então chegue cedo!
+Hora de pegar seu kit e camiseta (caso tenha comprado). Estamos providenciando bons brindes para o público, então chegue cedo para não perder!

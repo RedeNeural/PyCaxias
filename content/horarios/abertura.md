@@ -4,6 +4,5 @@ Category: horarios
 Tags: horarios
 Slug: Abertura
 Author: Host
-Abertura Rápida somente agradecendo os patrocinadores e aos participantes que chegaram cedo, 
-anuncio da hashtag para publicação das fotos
-apresentação da equipe de resposta
+
+Breve abertura do evento com agradecimentos aos patrocinadores e participantes, anúncio da hashtag do evento para publicação das fotos nas redes sociais e apresentação da equipe de resposta.

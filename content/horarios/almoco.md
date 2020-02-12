@@ -4,5 +4,4 @@ Category: horarios
 Tags: horarios
 Slug: almoco
 Author: Host
-O almoço tera duração de 1:30h então esperamos todos devolta nas instalações da ucs até as 13:30, 
-ainda não temos restaurante conveniado.
+O almoço terá duração de uma hora e meia, sendo o horário de retorno do evento as 13:30. Esperamos todos de volta nesse horário! 

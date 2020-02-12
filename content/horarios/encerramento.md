@@ -4,4 +4,4 @@ Category: horarios
 Tags: horarios
 Slug: encerramento
 Author: Host
-Hora de nos despedirmos, e nos organizarmos para o pos-evento! logo anunciaremos o local.
+Hora de nos despedirmos e nos organizarmos para o pós-evento! Em breve anunciaremos o local.
