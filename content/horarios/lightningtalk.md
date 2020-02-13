@@ -4,4 +4,4 @@ Category: horarios
 Tags: horarios
 Slug: lightningtalk
 Author: Host
-espaço de 3 minutos para qualquer pessoa do evento expor uma ideia, contar uma historia, ou agradecer.
+Espaço de 3 minutos para qualquer pessoa no evento expor uma ideia, contar uma história ou agradecer.
