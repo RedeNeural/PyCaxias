@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pycaxias.org/</loc>
-<lastmod>2020-02-12T21:10:40-00:00</lastmod>
+<lastmod>2020-02-13T23:08:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -61,6 +61,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pycaxias.org/dose-extra.html</loc>
+<lastmod>2020-03-14T08:30:00-03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://pycaxias.org/elia-cifali.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -174,6 +181,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://pycaxias.org/category/horarios.html</loc>
 <lastmod>2020-03-14T17:30:00-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://pycaxias.org/category/prata.html</loc>
+<lastmod>2020-03-14T08:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
