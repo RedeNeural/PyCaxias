@@ -3,6 +3,6 @@ Date: 2020-03-14 16:30
 Category: horarios
 Tags: horarios
 Slug: keynote
-Author: KeyNote
+Author: Julio Biason
 
-Em breve!
+Vamos ouvir que essa fera vai nos contar.
