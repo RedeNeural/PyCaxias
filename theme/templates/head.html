@@ -14,7 +14,7 @@
     <meta property="og:description" content="Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o conhecimento da linguagem python.">
     {% if article %}
     <meta property="og:image" content="{{ SITEURL }}/theme/img/palestrante/{{article.image}}">
-    <meta property="og:url" content="{{ article.url }}">
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
     {% else %}
     <meta property="og:image" content="{{ SITEURL }}/theme/img/share.png">
     <meta property="og:url" content="{{ SITEURL }}">
