@@ -4,5 +4,6 @@ Category: horarios
 Tags: horarios
 Slug: palestra5
 Author: Alexandre Neukirchen
+Image: alexandre.png
 
 Breve introdução de como aplicar machine learning com Jupyter notebook.

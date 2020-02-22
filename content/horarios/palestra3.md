@@ -4,5 +4,6 @@ Category: horarios
 Tags: horarios
 Slug: palestra3
 Author: Pedro Henrique
+Image: pedro.png
 
 Uma introdução ao Elasticsearch, a ferramenta, seus prós e contras. Explicação sobre como funciona o framework pyElasticsearch e exemplos de uso (live coding) para interação com o Elasticsearch de forma simplificada.
