@@ -4,287 +4,287 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://pycaxias.org/</loc>
-<lastmod>2022-02-28T12:04:09-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2022-02-28T09:30:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/credenciamento.html</loc>
+<loc>/credenciamento.html</loc>
 <lastmod>2020-03-14T08:00:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/Abertura.html</loc>
+<loc>/Abertura.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/alura.html</loc>
+<loc>/alura.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/devmedia.html</loc>
+<loc>/devmedia.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/devnaestrada.html</loc>
+<loc>/devnaestrada.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/devopsday.html</loc>
+<loc>/devopsday.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/diolinux.html</loc>
+<loc>/diolinux.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/dose-extra.html</loc>
+<loc>/dose-extra.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/elia-cifali.html</loc>
+<loc>/elia-cifali.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/garage-geek.html</loc>
+<loc>/garage-geek.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/gautica.html</loc>
+<loc>/gautica.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/macrosul.html</loc>
+<loc>/macrosul.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/sislam.html</loc>
+<loc>/sislam.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/palestra1.html</loc>
+<loc>/palestra1.html</loc>
 <lastmod>2020-03-14T08:50:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/palestra2.html</loc>
+<loc>/palestra2.html</loc>
 <lastmod>2020-03-14T09:40:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/coffe1.html</loc>
+<loc>/coffe1.html</loc>
 <lastmod>2020-03-14T10:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/pocket.html</loc>
+<loc>/pocket.html</loc>
 <lastmod>2020-03-14T11:15:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/lightningtalk.html</loc>
+<loc>/lightningtalk.html</loc>
 <lastmod>2020-03-14T11:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/almoco.html</loc>
+<loc>/almoco.html</loc>
 <lastmod>2020-03-14T12:00:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/palestra3.html</loc>
+<loc>/palestra3.html</loc>
 <lastmod>2020-03-14T13:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/palestra4.html</loc>
+<loc>/palestra4.html</loc>
 <lastmod>2020-03-14T14:15:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/palestra5.html</loc>
+<loc>/palestra5.html</loc>
 <lastmod>2020-03-14T15:00:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/coffe2.html</loc>
+<loc>/coffe2.html</loc>
 <lastmod>2020-03-14T15:45:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/keynote.html</loc>
+<loc>/keynote.html</loc>
 <lastmod>2020-03-14T16:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/encerramento.html</loc>
+<loc>/encerramento.html</loc>
 <lastmod>2020-03-14T17:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/category/apoiadores.html</loc>
+<loc>/category/apoiadores.html</loc>
 <lastmod>2020-03-14T08:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/category/diamante.html</loc>
+<loc>/category/diamante.html</loc>
 <lastmod>2020-03-14T08:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/category/horarios.html</loc>
+<loc>/category/horarios.html</loc>
 <lastmod>2020-03-14T17:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/category/ouro.html</loc>
+<loc>/category/ouro.html</loc>
 <lastmod>2020-03-14T08:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/category/prata.html</loc>
+<loc>/category/prata.html</loc>
 <lastmod>2020-03-14T08:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/tag/horarios.html</loc>
+<loc>/tag/horarios.html</loc>
 <lastmod>2020-03-14T17:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/alexandre-neukirchen.html</loc>
+<loc>/author/alexandre-neukirchen.html</loc>
 <lastmod>2020-03-14T15:00:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/ben-hur-santos-ott.html</loc>
+<loc>/author/ben-hur-santos-ott.html</loc>
 <lastmod>2020-03-14T14:15:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/devmedia.html</loc>
+<loc>/author/devmedia.html</loc>
 <lastmod>2020-03-14T11:15:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/host.html</loc>
+<loc>/author/host.html</loc>
 <lastmod>2020-03-14T17:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/juciano-cardoso.html</loc>
+<loc>/author/juciano-cardoso.html</loc>
 <lastmod>2020-03-14T09:40:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/julio-biason.html</loc>
+<loc>/author/julio-biason.html</loc>
 <lastmod>2020-03-14T16:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/leonardo-caldeira.html</loc>
+<loc>/author/leonardo-caldeira.html</loc>
 <lastmod>2020-03-14T08:50:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/pedro-henrique.html</loc>
+<loc>/author/pedro-henrique.html</loc>
 <lastmod>2020-03-14T13:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/rede-neural.html</loc>
+<loc>/author/rede-neural.html</loc>
 <lastmod>2020-03-14T08:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
