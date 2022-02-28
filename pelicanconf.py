@@ -5,7 +5,9 @@ from decouple import config
 
 AUTHOR = 'Rede Neural'
 
-SITENAME = 'PyCaxias 2020'
+SITENAME = 'PyCaxias 2021'
+SITEYEAR = 2021
+
 SITEURL = config('SITE_URL', default='/')
 
 PATH = 'content'
@@ -31,11 +33,11 @@ AUTHOR_FEED_RSS = None
 
 # OLD_EVENTS
 OLD_EVENTS = (
-    ('2014','#'),
-    ('2015','#'),
-    ('2016','#'),
-    ('2018','#'),
-    ('2019','#'),
+    ('2014','/2014'),
+    ('2015','/2015'),
+    ('2016','/2016'),
+    ('2018','/2018'),
+    ('2020','/2020'),
 )
 # OLD_EVENTS
 MENU = (
@@ -47,7 +49,7 @@ MENU = (
     ('#contact','Contato', False),
 )
 
-INSCRICAO_LINK = 'https://www.sympla.com.br/pycaxias-2020__760347'
+INSCRICAO_LINK = False
 
 # Social widget
 SOCIAL = {

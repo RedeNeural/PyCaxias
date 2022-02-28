@@ -6,7 +6,8 @@ import sys
 import datetime
 
 from invoke import task
-from invoke.util import cd
+from old.runner import move_old_to_output
+from util.myfuntions import move_cname
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
@@ -39,6 +40,8 @@ def clean(c):
 def build(c):
     """Build local version of site"""
     c.run('pelican -t theme -s {settings_base}'.format(**CONFIG))
+    move_old_to_output()
+    move_cname()
 
 @task
 def rebuild(c):
@@ -101,16 +104,10 @@ def livereload(c):
 
 
 @task
-def old(c, folder):
+def to_old(c):
     """generate old year of a master branch"""
-    os.makedirs(f'olds/{folder}')
-    shutil.copytree('content/', f'olds/{folder}/content')
-    shutil.copytree('plugins/', f'olds/{folder}/plugins')
-    shutil.copytree('theme/', f'olds/{folder}/theme')
-    shutil.copy('pelicanconf.py', f'olds/{folder}')
-    shutil.copy('publishconf.py', f'olds/{folder}')
-    shutil.copy('tasks.py', f'olds/{folder}')
-    print(folder)
+    folder = 'old/{}/'.format(SETTINGS.get('SITEYEAR'))
+    c.run('pelican -t theme -s {settings_base} -o {folder}'.format(**CONFIG, folder=folder))
 
 @task
 def gh_pages(c):

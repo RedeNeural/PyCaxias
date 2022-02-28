@@ -17,9 +17,9 @@
             <img src="{{ SITEURL }}/theme/img/logo.png" alt="logo-PyCaxias" class="img-fluid"><br>
             <h1 class="mb-4 pb-0">
                 <span style="display: none;">PyCaxias</span>
-                <span>2020</span>
+                <span>{{SITEYEAR}}</span>
             </h1>
-            <p class="mb-4 pb-0">14 de Março, UCS, Caxias do Sul</p>
+            <p class="mb-4 pb-0">9 de Abril, a definir</p>
         </div>
     </section>
 
@@ -41,11 +41,11 @@
                     </div>
                     <div class="col-lg-3">
                         <h3>Quando </h3>
-                        <p>Sábado<br>14 de Março de 2020<br>08:00h - 18:00h</p>
+                        <p>Sábado<br>9 de Abril de {{SITEYEAR}}<br>08:00h - 18:00h</p>
                     </div>
                     <div class="col-lg-3">
                         <h3>Onde </h3>
-                        <p>Ucs, Bloco H - Auditório, Caxias do Sul </p>
+                        <p>A Definir</p>
                     </div>
                 </div>
             </div>
@@ -67,17 +67,17 @@
                     </p>
                     <ul class="mt-4 list-group list-group-flush">
                         <li class="list-group-item text-center">
-                            Fim das Inscrições com Camiseta:
-                            <strong>20/02/2020</strong>
+                            Inicio das Inscrições:
+                            <strong>15/03/2021</strong>
                         </li>
                         <li class="list-group-item text-center">
-                            Fim das Inscrições: <strong>13/03/2020</strong>
+                            Fim das Inscrições: <strong>5/04/2021</strong>
                         </li>
                     </ul>
                     <p>
-                        <a href="https://www.sympla.com.br/pycaxias-2020__760347" target="_blank">
+                        <!-- <a href="https://www.sympla.com.br/pycaxias-2020__760347" target="_blank">
                             [Inscreva-se Agora]
-                        </a>
+                        </a> -->
                     </p>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                 <div class="tab-content row justify-content-center">
 
                     <!-- Schdule Day 1 -->
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                    <!-- <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
                         {% for a in articles %}
                             {% if a.category == "horarios" %}
                             <a href="{{a.url}}">
@@ -162,7 +162,7 @@
                             </a>
                             {%endif%}
                         {%endfor%}
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -177,7 +177,7 @@
                 <div class="section-header">
                     <h2>Patrocinadores Diamante</h2>
                 </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                <!-- <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
                     {% for a in articles %}
                         {% if a.category == "diamante" %}
                         <div class="col-lg-3 col-md-4 col-xs-6">
@@ -193,13 +193,13 @@
                         </div>
                         {%endif%}
                     {% endfor %}
-                </div>
+                </div> -->
             </div>
             <div class="container">
                 <div class="section-header">
                     <h2>Patrocinadores Ouro</h2>
                 </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                <!-- <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
                     {% for a in articles %}
                         {% if a.category == "ouro" %}
                         <div class="col-lg-3 col-md-4 col-xs-6">
@@ -215,13 +215,13 @@
                         </div>
                         {%endif%}
                     {% endfor %}
-                </div>
+                </div> -->
             </div>
             <div class="container">
                 <div class="section-header">
                     <h2>Patrocinadores Prata</h2>
                 </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                <!-- <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
                     {% for a in articles %}
                         {% if a.category == "prata" %}
                         <div class="col-lg-3 col-md-4 col-xs-6">
@@ -237,13 +237,13 @@
                         </div>
                         {%endif%}
                     {% endfor %}
-                </div>
+                </div> -->
             </div>
             <div class="container">
                 <div class="section-header">
                     <h2>Apoiadores</h2>
                 </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                <!-- <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
                     {% for a in articles %}
                         {% if a.category == "apoiadores" %}
                         <div class="col-lg-3 col-md-4 col-xs-6">
@@ -259,7 +259,7 @@
                         </div>
                         {%endif%}
                     {% endfor %}
-                </div>
+                </div> -->
             </div>
         </section>
 
