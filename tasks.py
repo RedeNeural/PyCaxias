@@ -78,6 +78,8 @@ def reserve(c):
 def preview(c):
     """Build production version of site"""
     c.run('pelican -t theme -s {settings_publish}'.format(**CONFIG))
+    move_old_to_output()
+    move_cname()
 
 @task
 def livereload(c):
