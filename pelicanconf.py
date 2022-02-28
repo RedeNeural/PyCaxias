@@ -5,8 +5,8 @@ from decouple import config
 
 AUTHOR = 'Rede Neural'
 
-SITENAME = 'PyCaxias 2021'
-SITEYEAR = 2021
+SITENAME = 'PyCaxias 2022'
+SITEYEAR = 2022
 
 SITEURL = config('SITE_URL', default='/')
 
