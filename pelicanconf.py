@@ -49,7 +49,7 @@ MENU = (
     ('#contact','Contato', False),
 )
 
-INSCRICAO_LINK = False
+INSCRICAO_LINK = 'https://www.sympla.com.br/pycaxias-2022__1555508'
 
 # Social widget
 SOCIAL = {
