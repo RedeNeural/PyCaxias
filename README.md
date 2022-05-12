@@ -1,9 +1,15 @@
 PyCaxias
 ============
 
-[pycaxias.org](http://pycaxias.org)
+![Logo PyCaxias](./util/logo.png)
 
-Projeto Pelican para criação so site pycaxias!
+[PyCaxias.org](http://pycaxias.org)
+
+Repositorio do site PyCaxias 
+
+Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o conhecimento da linguagem python.
+
+Projeto [Pelican](https://docs.getpelican.com/en/latest/)!
 
 # Ambiente
 ```shell
@@ -21,7 +27,10 @@ invoke reserve
 ```
 
 # Configuração
- - python decouple para configurar a url.
+
+> 
+> python decouple para configurar a url.
+>
 
 # Deploy
 ```shell
