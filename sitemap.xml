@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pycaxias.org/</loc>
-<lastmod>2022-05-07T14:05:10-00:00</lastmod>
+<lastmod>2022-05-12T19:47:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -26,6 +26,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pycaxias.org/Abertura.html</loc>
+<lastmod>2020-03-14T08:30:00-03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://pycaxias.org/gautica.html</loc>
 <lastmod>2020-03-14T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -119,6 +126,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://pycaxias.org/beemon-tecnlogia.html</loc>
 <lastmod>2022-01-01T08:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://pycaxias.org/category/apoiadores.html</loc>
+<lastmod>2020-03-14T08:30:00-03:06</lastmod>
+<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
