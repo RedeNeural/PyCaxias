@@ -1,5 +1,5 @@
 Title: Python com Docker
-Date: 2022-06-11 08:50
+Date: 2022-06-11 08:35
 Category: horarios
 Tags: horarios
 Slug: palestra1
