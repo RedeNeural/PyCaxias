@@ -1,9 +1,8 @@
-Title: Jupyter e Machine Learning para Iniciantes
-Date: 2020-03-14 15:00
+Title: Celery
+Date: 2022-06-11 14:00
 Category: horarios
 Tags: horarios
 Slug: palestra5
-Author: Alexandre Neukirchen
-Image: alexandre.png
+Author: Pedro Henrique de Assumpção
 
-Breve introdução de como aplicar machine learning com Jupyter notebook.
+Implantação de Celery, com Rabbit e Django. Além de abordar de forma simplificada tarefas assíncronas e paralelas.

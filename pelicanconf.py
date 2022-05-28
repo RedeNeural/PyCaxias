@@ -53,7 +53,7 @@ INSCRICAO_LINK = 'https://www.sympla.com.br/pycaxias-2022__1555508'
 
 # Social widget
 SOCIAL = {
-    'instagram':'',
+    'instagram':'https://www.instagram.com/pycaxias',
     'twitter':'',
     'facebook':'https://www.facebook.com/pycaxias',
 }

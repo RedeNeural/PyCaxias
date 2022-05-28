@@ -1,10 +1,9 @@
-Title: Entendendo técnicas e valor de testes unitários e de integração
-Date: 2020-03-14 14:15
+Title: Desenvolvendo aplicações serverless com Chalice
+Date: 2022-06-11 13:30
 Category: horarios
 Tags: horarios
 Slug: palestra4
-Author: Ben-Hur Santos Ott
-Image: ben-hur.png
+Author: Lucas Soranzo
 
-Vamos abordar conceitos sobre cobertura de testes unitários e de integração, bem como ferramentas e técnicas para obter melhor confiança na entrega de software e minimizar riscos em implementações futuras.
+Desenvolvendo aplicações serverless com Chalice
 

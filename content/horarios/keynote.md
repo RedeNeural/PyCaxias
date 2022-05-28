@@ -1,9 +1,8 @@
 Title: Keynote
-Date: 2020-03-14 16:30
+Date: 2022-06-11 16:40
 Category: horarios
 Tags: horarios
 Slug: keynote
-Author: Julio Biason
-Image: jb.png
+Author: Filipe Cifali
 
 Vamos ouvir que essa fera vai nos contar.
