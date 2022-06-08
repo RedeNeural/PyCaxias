@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pycaxias.org/</loc>
-<lastmod>2022-05-28T10:59:29-00:00</lastmod>
+<lastmod>2022-06-08T20:25:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -32,6 +32,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://pycaxias.org/nlcake-erp.html</loc>
+<lastmod>2022-01-01T08:30:00-03:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://pycaxias.org/credenciamento.html</loc>
 <lastmod>2022-06-11T08:00:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -47,7 +54,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://pycaxias.org/palestra1.html</loc>
-<lastmod>2022-06-11T08:50:00-03:00</lastmod>
+<lastmod>2022-06-11T08:35:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -165,6 +172,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://pycaxias.org/category/prata.html</loc>
+<lastmod>2022-01-01T08:30:00-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://pycaxias.org/tag/horarios.html</loc>
 <lastmod>2022-06-11T17:40:00-03:06</lastmod>
 <changefreq>daily</changefreq>
@@ -228,15 +242,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/marcelo-hilario-filho.html</loc>
-<lastmod>2022-06-11T08:50:00-03:06</lastmod>
+<loc>https://pycaxias.org/author/pedro-henrique-de-assumpcao.html</loc>
+<lastmod>2022-06-11T14:00:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://pycaxias.org/author/pedro-henrique-de-assumpcao.html</loc>
-<lastmod>2022-06-11T14:00:00-03:06</lastmod>
+<loc>https://pycaxias.org/author/perceu-bertoletti.html</loc>
+<lastmod>2022-06-11T08:35:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
