@@ -3,7 +3,7 @@ PyCaxias
 
 ![Logo PyCaxias](./util/logo2023-2.png)
 
-[PyCaxias.org](http://pycaxias.org)
+[PyCaxias.org](https://pycaxias.com.br/)
 
 Repositorio do site PyCaxias 
 
