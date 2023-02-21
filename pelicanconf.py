@@ -5,8 +5,8 @@ from decouple import config
 
 AUTHOR = 'Rede Neural'
 
-SITENAME = 'PyCaxias 2022'
-SITEYEAR = 2022
+SITENAME = 'PyCaxias 2023'
+SITEYEAR = 2023
 
 SITEURL = config('SITE_URL', default='/')
 
@@ -50,7 +50,7 @@ MENU = (
     ('#contact','Contato', False),
 )
 
-INSCRICAO_LINK = 'https://www.sympla.com.br/pycaxias-2022__1555508'
+INSCRICAO_LINK = 'https://www.sympla.com.br/pycaxias-2023__1873136?share_id=5rmrc'
 
 # Social widget
 SOCIAL = {
@@ -60,7 +60,7 @@ SOCIAL = {
 }
 
 DEFAULT_PAGINATION = False
-SITE_META_KEYWORDS = "PyCaxias 2020, evento python, caxias do sul, evento caxias do sul, python, pycaxias, comunidade python caxias do sul, python rio grande do sul, comunidade"
+SITE_META_KEYWORDS = "PyCaxias 2023, evento python, caxias do sul, evento caxias do sul, python, pycaxias, comunidade python caxias do sul, python rio grande do sul, comunidade"
 SITE_META_DESCRIPTION = "Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o conhecimento da linguagem python"
 
 # Uncomment following line if you want document-relative URLs when developing
