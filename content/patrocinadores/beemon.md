@@ -1,4 +1,4 @@
-Title: Beemôn Tecnlogia
+Title: Beemôn Tecnologia
 Subtitle: Somos uma empresa do Grupo Mônaco e criamos soluções inovadoras para frotas. Seja Beemôn você também!
 Date: 2023-01-01 08:30
 Category: ouro
