@@ -1,7 +1,7 @@
-Title: Almoço
-Date: 2023-03-11 12:00
-Category: horarios
-Tags: horarios
-Slug: almoco
-Author: Host
-O almoço terá duração de uma hora e meia, sendo o horário de retorno do evento as 13:30. Esperamos todos de volta nesse horário! 
+title: almoço
+date: 2023-03-11 12:00
+category: horarios
+tags: horarios
+slug: almoco
+author: host
+o almoço terá duração de uma hora e meia, sendo o horário de retorno do evento as 13:30. esperamos todos de volta nesse horário! 
