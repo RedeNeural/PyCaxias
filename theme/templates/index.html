@@ -153,7 +153,7 @@
                     <!-- Schdule Day 1 -->
                     <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
                         {% for a in articles %}
-                            {% if a.category == "horarios" %}
+                            {% if a.category == "horarios" and a.year == SITEYEAR %}
                             <a href="{{a.url}}">
                                 <div class="row schedule-item">
                                     <div class="col-md-2">
