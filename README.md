@@ -1,7 +1,7 @@
 PyCaxias
 ============
 
-![Logo PyCaxias](./util/logo2023-2.png)
+![Logo PyCaxias](./util/logo2024.png)
 
 [PyCaxias.org](https://pycaxias.com.br/)
 
