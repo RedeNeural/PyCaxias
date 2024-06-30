@@ -1,12 +1,10 @@
-Title: Flutter: o que é? Onde vive? Do que se alimenta?
-Date: 2023-03-11 10:30
+Title: Raspagem de Dados com Selenium e Playwright.
+Date: 2024-07-06 10:30
 Category: horarios
 Tags: horarios
 Slug: palestra3
-Author: Vilson Dauinheimer (Bwolf)
+Author: Lucas Alves
 
 
 
-Vamos abordar sobre o que é o flutter,<br>
-a evolução nos últimos 4 anos,<br>
-e apresentar o porque está sendo tao adotado pelas empresas.<br>
+Introdução à raspagem de dados via Selenium e Playwright no site Quotes to Scrape.

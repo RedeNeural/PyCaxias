@@ -1,10 +1,10 @@
-Title: Data Engineering Pipelines utilizando Python
-Date: 2023-03-11 14:10
+Title: Criando uma ferramenta modular para pipeline de dados.
+Date: 2024-07-06 14:10
 Category: horarios
 Tags: horarios
 Slug: palestra5
-Author: Thaís Linzmaier
+Author: Alan Testolin
 
 
 
-Amostragem do processo de um pipeline de engenharia de dados utilizando Python, abrangendo coleta, tratamento e disponibilização de dados.
+Como criamos uma ferramenta modular que se encaixa em diversas plataformas como GCP, AWS e Azure com custo baixíssimo e escalabilidade.
