@@ -1,5 +1,5 @@
 Title: Destruindo boas práticas de programação, mas se divertindo com isso!
-Date: 2023-03-11 14:50
+Date: 2024-07-06 14:50
 Category: horarios
 Tags: horarios
 Slug: palestra6
