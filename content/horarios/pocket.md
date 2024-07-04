@@ -6,4 +6,4 @@ Slug: pocket
 Author: Beemôn
 Image: beemon.png
 
-Espaço de 10 minutos cedido ao patrocinador beemôn.
+Espaço de 10 minutos cedido ao patrocinador Bravo Inteligência Empresarial.
