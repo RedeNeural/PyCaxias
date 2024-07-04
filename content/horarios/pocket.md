@@ -1,9 +1,9 @@
 Title: Pocket Talk
-Date: 2023-03-11 11:10
+Date: 2024-07-06 11:10
 Category: horarios
 Tags: horarios
 Slug: pocket
-Author: Beemôn
-Image: beemon.png
+Author: Bravo Inteligência Empresarial
+Image: bravo.png
 
-Espaço de 10 minutos cedido ao patrocinador beemôn.
+Espaço de 10 minutos cedido ao patrocinador Bravo Inteligência Empresarial.
