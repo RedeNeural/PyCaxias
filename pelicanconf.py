@@ -5,8 +5,14 @@ from decouple import config
 
 AUTHOR = 'Rede Neural'
 
-SITENAME = 'PyCaxias 2024'
-SITEYEAR = 2024
+SITENAME = 'PyCaxias 2025'
+SITEYEAR = 2025
+DAY_EVENT = "17 de Maio de 2025"
+DAY_EVENT_SHORT = "17/05/2025"
+LOCAL = "UCS, Bloco J"
+CALL_FOR_PAPERS = "https://forms.gle/mcw6gjmCjzu8cnN9A"
+INCRICAO_OPENED = False
+INSCRICAO_LINK = ''
 
 SITEURL = config('SITE_URL', default='/')
 
@@ -35,18 +41,16 @@ OLD_EVENTS = (
     ('2020','/2020'),
     ('2022','/2022'),
     ('2023','/2023'),
+    ('2024','/2024'),
 )
 # OLD_EVENTS
 MENU = (
     ('#intro','Início', True),
     ('#about','Sobre', False),
     ('#schedule','Agenda', False),
-    ('#inscricao','Inscrição', False),
     ('#supporters','Patrocinadores', False),
     ('#contact','Contato', False),
 )
-
-INSCRICAO_LINK = 'https://www.sympla.com.br/pycaxias-2024__2442645'
 
 # Social widget
 SOCIAL = {
@@ -56,7 +60,7 @@ SOCIAL = {
 }
 
 DEFAULT_PAGINATION = False
-SITE_META_KEYWORDS = "PyCaxias 2024, evento python, caxias do sul, evento caxias do sul, python, pycaxias, comunidade python caxias do sul, python rio grande do sul, comunidade"
+SITE_META_KEYWORDS = "PyCaxias 2025, evento python, caxias do sul, evento caxias do sul, python, pycaxias, comunidade python caxias do sul, python rio grande do sul, comunidade"
 SITE_META_DESCRIPTION = "Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o conhecimento da linguagem python"
 
 # Uncomment following line if you want document-relative URLs when developing
