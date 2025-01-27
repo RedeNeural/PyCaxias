@@ -11,8 +11,8 @@ DAY_EVENT = "17 de Maio de 2025"
 DAY_EVENT_SHORT = "17/05/2025"
 LOCAL = "UCS, Bloco J"
 CALL_FOR_PAPERS = "https://forms.gle/mcw6gjmCjzu8cnN9A"
-INCRICAO_OPENED = False
-INSCRICAO_LINK = ''
+INCRICAO_OPENED = True
+INSCRICAO_LINK = 'https://www.sympla.com.br/evento/pycaxias-2025/2804197'
 
 SITEURL = config('SITE_URL', default='/')
 
