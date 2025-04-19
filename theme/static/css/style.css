@@ -39,12 +39,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: #eee;
+  text-shadow: 2px 2px rgb(56, 20, 80);
 }
+h2.pink {
+  background-color: #fd3999;
+  transform: skewX(-15deg)
+}
+
 
 .main-page {
   margin-top: 70px;
@@ -815,11 +821,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a {
-  border: none;
-  border-radius: 50px;
+  border: 3px solid black;
   font-weight: 600;
-  background-color: #0e1b4d;
-  color: #fff;
+  background-color: #fff;
+  color: rgb(56, 20, 80);
   padding: 10px 100px;
 }
 
@@ -1317,7 +1322,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #112363;
+  color: #ccc;
 }
 
 #contact .contact-info a {
