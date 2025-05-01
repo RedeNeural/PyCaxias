@@ -46,8 +46,19 @@ h6 {
   color: #eee;
   text-shadow: 2px 2px rgb(56, 20, 80);
 }
+
 h2.pink {
   background-color: #fd3999;
+  transform: skewX(-15deg)
+}
+
+h2.green {
+  background-color: #7fc300;
+  transform: skewX(-15deg)
+}
+
+h2.blue {
+  background-color: #45ddfc;
   transform: skewX(-15deg)
 }
 
