@@ -1,10 +1,10 @@
 <header id="header">
     <div class="container">
-        <div id="logo" class="pull-left">
+        <div id="logo" class="pull-left wow animate__backInLeft">
             <a href="/" class="scrollto"><img src="{{ SITEURL }}/theme/img/logo{{SITEYEAR}}_sm.png" alt="logo-{{SITENAME}}" title="logo-{{SITENAME}}"></a>
         </div>
         <nav id="nav-menu-container">
-            <ul class="nav-menu">
+            <ul class="nav-menu wow animate__backInRight">
                 {% for tag, text, active in MENU %}
                     {% if active %}
                     <li class="menu-active"><a href="{{tag}}">{{text}}</a></li>

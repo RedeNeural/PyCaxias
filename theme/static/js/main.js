@@ -32,7 +32,10 @@ jQuery(document).ready(function( $ ) {
   }
 
   // Initiate the wowjs animation library
-  new WOW().init();
+  new WOW({
+    boxClass: 'wow',     // default
+    animateClass: 'animate__animated', // default
+  }).init();
 
   // Initialize Venobox
   $('.venobox').venobox({
