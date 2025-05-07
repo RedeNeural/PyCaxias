@@ -47,6 +47,12 @@ h6 {
   text-shadow: 2px 2px rgb(56, 20, 80);
 }
 
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(56, 20, 80);
+  text-shadow: none;
+}
+
 h2.pink {
   background-color: #fd3999;
   transform: skewX(-15deg)
@@ -859,11 +865,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-bottom: 1px solid #cad4f6;
   padding-top: 15px;
   padding-bottom: 15px;
-  transition: background-color ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 #schedule .schedule-item:hover {
   background-color: #fff;
+  transform: translateX(15px) translateY(-10px) skewX(-10deg);
+  border: 1px solid #cad4f6;
+  box-shadow: -5px 5px #7fc300;
 }
 
 #schedule .schedule-item time {
