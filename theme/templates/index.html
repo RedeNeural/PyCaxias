@@ -153,7 +153,7 @@
                     <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
                         {% for a in articles %}
                             {% if a.category == "horarios" and a.date.year == SITEYEAR %}
-                            <a href="{{a.url}}">
+                            <a href="#">
                                 <div class="row schedule-item">
                                     <div class="col-md-2">
                                         <time><strong>{{a.date.strftime('%H:%M') }}</strong></time>

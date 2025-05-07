@@ -1,10 +1,6 @@
-Title: Python + Do Zero à API: Desenvolvendo com Django Rest Framework
-Date: 2024-07-06 13:30
+Title: Treinando IA com Python sem estourar o orçamento
+Date: 2025-05-17 13:30
 Category: horarios
 Tags: horarios
 Slug: palestra4
-Author: Fabio Gabriel Cruz
-
-
-
-Desenvolvimento de uma API utilizando django-rest.
+Author: William Moraes da Silva

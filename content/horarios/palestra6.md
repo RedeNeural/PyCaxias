@@ -1,12 +1,7 @@
-Title: Destruindo boas práticas de programação, mas se divertindo com isso!
-Date: 2024-07-06 14:50
+Title: Recrutamento em Tecnologia
+Date: 2025-05-17 14:50
 Category: horarios
 Tags: horarios
 Slug: palestra6
-Author: Perceu Bertoletti
+Author: Sofia Turra
 
-
-
-A palestra tenta abordar como desenvolvimento pode ser divertido, quando paramos de tentar criar algo fenomenal.<br>
-Vamos usar uma serie de libs, para nos divertir programando e lembrar que isso pode ser legal.<br>
-Que tal acharmos um meio termo entre o que nos fez gostar de desenvolvimento e a nossa responsabilidade como profissional?

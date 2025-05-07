@@ -1,5 +1,5 @@
 Title: Lightning talk
-Date: 2024-07-06 11:20
+Date: 2025-05-17 11:20
 Category: horarios
 Tags: horarios
 Slug: lightningtalk

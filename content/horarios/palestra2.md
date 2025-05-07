@@ -1,9 +1,9 @@
-Title: Desenvolvimento web com Django sem dor de cabeça!
-Date: 2024-07-06 09:20
+Title: Desafios de observabilidade em arquiteturas de microserviço
+Date: 2025-05-17 09:20
 Category: horarios
 Tags: horarios
 Slug: palestra2
-Author: Adriano Margarin
+Author: Lucas Soranzo
 
 
 

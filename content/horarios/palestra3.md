@@ -1,10 +1,7 @@
-Title: Raspagem de Dados com Selenium e Playwright.
-Date: 2024-07-06 10:30
+Title: Pare de gerar desculpas — Aprenda geradores agora!
+Date: 2025-05-17 10:30
 Category: horarios
 Tags: horarios
 Slug: palestra3
-Author: Lucas Alves
+Author: Nilton Pimentel
 
-
-
-Introdução à raspagem de dados via Selenium e Playwright no site Quotes to Scrape.

@@ -1,5 +1,5 @@
 Title: Encerramento
-Date: 2024-07-06 17:40
+Date: 2025-05-17 17:30
 Category: horarios
 Tags: horarios
 Slug: encerramento
