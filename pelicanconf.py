@@ -62,6 +62,6 @@ SOCIAL = {
 DEFAULT_PAGINATION = False
 SITE_META_KEYWORDS = "PyCaxias 2025, evento python, caxias do sul, evento caxias do sul, python, pycaxias, comunidade python caxias do sul, python rio grande do sul, comunidade"
 SITE_META_DESCRIPTION = "Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o conhecimento da linguagem python"
-
+SITE_V=1
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
