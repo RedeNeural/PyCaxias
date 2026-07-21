@@ -1,0 +1,73 @@
+<footer class="rodape">
+  <div class="envelope">
+    <div class="rodape__grade">
+
+      <div class="rodape__marca">
+        <img src="{{ SITEURL }}/theme/img/logo-2026-stack.png" alt="{{ SITENAME }}" width="220" height="105">
+        <p>{{ DAY_EVENT }} · {{ LOCAL }}<br>Caxias do Sul, Rio Grande do Sul.</p>
+      </div>
+
+      <div>
+        <h4>Nesta página</h4>
+        <ul>
+          {% for endereco, texto in MENU %}
+          <li><a href="{{ SITEURL }}/{{ endereco }}">{{ texto }}</a></li>
+          {% endfor %}
+          <li><a href="{{ CODIGO_CONDUTA }}" target="_blank" rel="noopener">Código de conduta</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Edições anteriores</h4>
+        <ul class="anos-lista">
+          {% for ano, endereco in OLD_EVENTS %}
+          <li><a href="{{ endereco }}">{{ ano }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Fale com a gente</h4>
+        <ul>
+          <li><a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></li>
+          {% for pessoa in CONTATOS %}
+          <li><a href="{{ pessoa.whatsapp }}" target="_blank" rel="noopener">{{ pessoa.telefone }}</a></li>
+          {% endfor %}
+        </ul>
+
+        <div class="redes">
+          {% if SOCIAL.instagram %}
+          <a href="{{ SOCIAL.instagram }}" target="_blank" rel="noopener" aria-label="Instagram do PyCaxias">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
+              <circle cx="12" cy="12" r="4.2"/>
+              <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          {% endif %}
+          {% if SOCIAL.facebook %}
+          <a href="{{ SOCIAL.facebook }}" target="_blank" rel="noopener" aria-label="Facebook do PyCaxias">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3-.04-1.3-.13-2.45-.13-2.42 0-4.08 1.48-4.08 4.2v2.34H7.45V13h2.72v8z"/>
+            </svg>
+          </a>
+          {% endif %}
+          {% if SOCIAL.github %}
+          <a href="{{ SOCIAL.github }}" target="_blank" rel="noopener" aria-label="Repositório do site no GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.2A9.8 9.8 0 0 0 8.9 21.3c.5.1.68-.21.68-.47v-1.8c-2.77.6-3.36-1.2-3.36-1.2-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.33 1.08 2.9.83.09-.65.35-1.09.63-1.34-2.21-.25-4.54-1.11-4.54-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.56 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A9.8 9.8 0 0 0 12 2.2"/>
+            </svg>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rodape__base">
+      <span>© {{ SITEYEAR }} Comunidade Python de Caxias do Sul</span>
+      <span>Identidade visual por <a href="https://www.instagram.com/fabio_agto" target="_blank" rel="noopener">@fabio_agto</a></span>
+      <span>Site feito pela comunidade, em Pelican</span>
+    </div>
+  </div>
+</footer>

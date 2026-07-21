@@ -1,4 +1,5 @@
-pelican[markdown]
+pelican[markdown]==4.12.0
+python-decouple
 livereload
 invoke
 ghp-import

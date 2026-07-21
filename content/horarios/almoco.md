@@ -1,7 +1,8 @@
-title: Almoço
-date: 2024-05-05 11:35
-category: horarios
-tags: horarios
-slug: almoco
-author: host
-o almoço terá duração de uma hora e meia, sendo o horário de retorno do evento as 13:25. esperamos todos de volta nesse horário! 
+Title: Almoço
+Date: 2026-09-26 12:15
+Category: horarios
+Tags: horarios
+Slug: almoco
+Tipo: intervalo
+
+Uma hora e meia para almoçar. Voltamos às 13h45 em ponto.

@@ -1,67 +1,143 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+
 from decouple import config
 
+# ---------------------------------------------------------------------------
+# Identidade do evento
+# Tudo que muda de um ano para o outro esta aqui. O tema le estes valores.
+# ---------------------------------------------------------------------------
 AUTHOR = 'Rede Neural'
 
-SITENAME = 'PyCaxias 2025'
-SITEYEAR = 2025
-DAY_EVENT = "17 de Maio de 2025"
-DAY_EVENT_SHORT = "17/05/2025"
-LOCAL = "UCS, Bloco J"
-CALL_FOR_PAPERS = "https://forms.gle/mcw6gjmCjzu8cnN9A"
-INCRICAO_OPENED = True
-INSCRICAO_LINK = 'https://www.sympla.com.br/evento/pycaxias-2025/2804197'
+SITENAME = 'PyCaxias 2026'
+SITEYEAR = 2026
 
-SITEURL = config('SITE_URL', default='/')
+DAY_EVENT = '26 de setembro de 2026'
+DAY_EVENT_SHORT = '26/09/2026'
+DAY_EVENT_ISO = '2026-09-26T08:00:00-03:00'   # usado na contagem regressiva
+WEEKDAY_EVENT = 'Sábado'
+HOURS_EVENT = '08h às 18h'
+
+LOCAL = 'Uniftec Caxias do Sul'
+LOCAL_ADDRESS = 'Rua Ludovico Cavinato, 2570 - Bairro Fátima, Caxias do Sul/RS'
+LOCAL_MAP = 'https://www.google.com/maps/search/?api=1&query=Uniftec+Caxias+do+Sul'
+
+# Chamadas e inscricoes
+CALL_FOR_PAPERS = 'https://forms.gle/mcw6gjmCjzu8cnN9A'
+CALL_FOR_PAPERS_OPENED = True
+INCRICAO_OPENED = False
+INSCRICAO_LINK = ''
+INSCRICAO_TSHIRT_DEADLINE = ''
+
+# ---------------------------------------------------------------------------
+# Pelican
+# ---------------------------------------------------------------------------
+SITEURL = config('SITE_URL', default='')
 
 PATH = 'content'
+THEME = 'theme'
+OUTPUT_PATH = 'output'
 
-SITEMAP = {
-    'format': 'xml',
-    'exclude': ['tags.html', 'categories.html', 'authors.html', 'archives.html']
-}
+TIMEZONE = 'America/Sao_Paulo'
+DEFAULT_LANG = 'pt-br'
+DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 
 ARTICLE_ORDER_BY = 'date'
-TIMEZONE = 'America/Sao_Paulo'
+DEFAULT_PAGINATION = False
 
-DEFAULT_LANG = 'pt-br'
+ARTICLE_URL = 'palestra/{slug}/'
+ARTICLE_SAVE_AS = 'palestra/{slug}/index.html'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+DIRECT_TEMPLATES = ['index']
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+TAG_SAVE_AS = ''
+TAGS_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
 
-# OLD_EVENTS
-OLD_EVENTS = (
-    ('2014','/2014'),
-    ('2015','/2015'),
-    ('2016','/2016'),
-    ('2018','/2018'),
-    ('2020','/2020'),
-    ('2022','/2022'),
-    ('2023','/2023'),
-    ('2024','/2024'),
-)
-# OLD_EVENTS
+FEED_ALL_ATOM = None
+FEED_ALL_RSS = None
+CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_RSS = None
+TRANSLATION_FEED_ATOM = None
+TRANSLATION_FEED_RSS = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
+STATIC_PATHS = ['extra']
+EXTRA_PATH_METADATA = {}
+
+# ---------------------------------------------------------------------------
+# Navegacao
+# ---------------------------------------------------------------------------
 MENU = (
-    ('#intro','Início', True),
-    ('#about','Sobre', False),
-    ('#schedule','Agenda', False),
-    ('#supporters','Patrocinadores', False),
-    ('#contact','Contato', False),
+    ('#sobre', 'Sobre'),
+    ('#agenda', 'Agenda'),
+    ('#palestrantes', 'Palestrantes'),
+    ('#inscricao', 'Inscrição'),
+    ('#patrocinio', 'Patrocínio'),
+    ('#contato', 'Contato'),
 )
 
-# Social widget
+OLD_EVENTS = (
+    ('2014', '/2014'),
+    ('2015', '/2015'),
+    ('2016', '/2016'),
+    ('2018', '/2018'),
+    ('2020', '/2020'),
+    ('2022', '/2022'),
+    ('2023', '/2023'),
+    ('2024', '/2024'),
+    ('2025', '/2025'),
+)
+
+# ---------------------------------------------------------------------------
+# Contato e redes
+# ---------------------------------------------------------------------------
+EMAIL = 'pythoncaxias@gmail.com'
+
+CONTATOS = (
+    {
+        'nome': 'Lucas Eduardo',
+        'papel': 'Organização e patrocínio',
+        'telefone': '(54) 9 9124-6539',
+        'whatsapp': 'https://api.whatsapp.com/send?phone=5554991246539&text=Ola%20Lucas,%20gostaria%20de%20falar%20sobre%20o%20PyCaxias',
+        'telegram': 'https://t.me/LucasEduard',
+    },
+    {
+        'nome': 'Pedro',
+        'papel': 'Organização',
+        'telefone': '(54) 9 9170-9966',
+        'whatsapp': 'https://api.whatsapp.com/send?phone=5554991709966&text=Ola%20Pedro,%20gostaria%20de%20falar%20sobre%20o%20PyCaxias',
+        'telegram': '',
+    },
+)
+
 SOCIAL = {
-    'instagram':'https://www.instagram.com/pycaxias',
-    'twitter':'',
-    'facebook':'https://www.facebook.com/pycaxias',
+    'instagram': 'https://www.instagram.com/pycaxias',
+    'facebook': 'https://www.facebook.com/pycaxias',
+    'github': 'https://github.com/RedeNeural/PyCaxias',
+    'twitter': '',
 }
 
-DEFAULT_PAGINATION = False
-SITE_META_KEYWORDS = "PyCaxias 2025, evento python, caxias do sul, evento caxias do sul, python, pycaxias, comunidade python caxias do sul, python rio grande do sul, comunidade"
-SITE_META_DESCRIPTION = "Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o conhecimento da linguagem python"
-SITE_V=1
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+CODIGO_CONDUTA = 'https://python.org.br/cdc/'
+
+# ---------------------------------------------------------------------------
+# SEO
+# ---------------------------------------------------------------------------
+SITE_META_DESCRIPTION = (
+    'PyCaxias 2026: um sábado inteiro de Python na Serra Gaúcha. '
+    '26 de setembro, na Uniftec Caxias do Sul. Entrada gratuita.'
+)
+SITE_META_KEYWORDS = (
+    'PyCaxias 2026, evento python, caxias do sul, python, comunidade python, '
+    'serra gaúcha, uniftec, evento de tecnologia caxias do sul, python brasil'
+)
+SITE_V = '2026.1'
+
+GA_ID = 'GTM-MPWH9CMP'
+
+# RELATIVE_URLS = True

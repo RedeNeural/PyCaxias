@@ -1,0 +1,30 @@
+<header class="cabecalho">
+  <div class="envelope cabecalho__interno">
+    <a class="cabecalho__marca" href="{{ SITEURL }}/" aria-label="{{ SITENAME }} — início">
+      <img src="{{ SITEURL }}/theme/img/logo-2026.png" alt="{{ SITENAME }}" width="400" height="88">
+    </a>
+
+    <button class="menu-alternar" type="button" aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu">
+      <span></span>
+    </button>
+
+    <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+      <ul>
+        {% for endereco, texto in MENU %}
+        <li><a href="{{ SITEURL }}/{{ endereco }}">{{ texto }}</a></li>
+        {% endfor %}
+        <li>
+          {% if INCRICAO_OPENED and INSCRICAO_LINK %}
+          <a class="botao botao--solido botao--pequeno" href="{{ INSCRICAO_LINK }}" target="_blank" rel="noopener">
+            <span>Inscreva-se</span>
+          </a>
+          {% elif CALL_FOR_PAPERS_OPENED and CALL_FOR_PAPERS %}
+          <a class="botao botao--solido botao--pequeno" href="{{ CALL_FOR_PAPERS }}" target="_blank" rel="noopener">
+            <span>Enviar palestra</span>
+          </a>
+          {% endif %}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
