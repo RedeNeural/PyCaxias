@@ -1,0 +1,8 @@
+Title: Nome da pessoa
+Date: 2026-09-26 09:45
+Category: palestrantes
+Slug: nome-da-pessoa
+image: nome-da-pessoa.png
+palestra: Titulo da palestra
+
+Mini biografia da pessoa. Renomeie este arquivo para .md para ativa-lo.

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% block titulo %}{{ SITENAME }} — {{ DAY_EVENT_SHORT }}, {{ LOCAL }}{% endblock %}</title>
+  <meta name="description" content="{{ SITE_META_DESCRIPTION }}">
+  <meta name="keywords" content="{{ SITE_META_KEYWORDS }}">
+  <meta name="theme-color" content="#04070A">
+
+  <link rel="icon" href="{{ SITEURL }}/theme/img/favicon.png">
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/img/apple-touch-icon.png">
+  {% if SITEURL %}<link rel="canonical" href="{{ SITEURL }}/{% if article %}{{ article.url }}{% endif %}">{% endif %}
+
+  <meta property="og:site_name" content="{{ SITENAME }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="{% block og_titulo %}{{ SITENAME }} — {{ DAY_EVENT_SHORT }}{% endblock %}">
+  <meta property="og:description" content="{% block og_desc %}{{ SITE_META_DESCRIPTION }}{% endblock %}">
+  <meta property="og:image" content="{{ SITEURL }}/theme/img/og-pycaxias-2026.png">
+  <meta property="og:image:alt" content="Logo do PyCaxias 2026">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,100,400;0,112,600;1,118,700;1,118,800&family=Poppins:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pycaxias.css?v={{ SITE_V }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{ SITENAME }}",
+    "startDate": "{{ DAY_EVENT_ISO }}",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "{{ LOCAL }}",
+      "address": "{{ LOCAL_ADDRESS }}"
+    },
+    "description": "{{ SITE_META_DESCRIPTION }}",
+    "organizer": { "@type": "Organization", "name": "Comunidade Python de Caxias do Sul" }
+  }
+  </script>
+
+  {% if GA_ID %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_ID }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ GA_ID }}');
+  </script>
+  {% endif %}
+</head>
+
+<body>
+  <a class="pular-para-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <div class="progresso" aria-hidden="true"></div>
+
+  {% include 'partials/cabecalho.html' %}
+
+  {% block trilho %}{% endblock %}
+
+  <main id="conteudo">
+    {% block conteudo %}{% endblock %}
+  </main>
+
+  {% include 'partials/rodape.html' %}
+
+  <script src="{{ SITEURL }}/theme/js/pycaxias.js?v={{ SITE_V }}" defer></script>
+</body>
+</html>

@@ -1,8 +1,9 @@
-Title: Coffee Break
-Date: 2025-05-17 15:30
+Title: Coffee break
+Date: 2026-09-26 15:15
 Category: horarios
 Tags: horarios
-Slug: coffe2
-Author: Host
-A tão esperada hora do café! Seu momento de conversar com as empresas que estão com seus estandes, tomar um coffe bacana e fazer networking.
-Lembre-se sempre da formação pac-man ou pizza, para que outras pessoas sempre possam se aproximar da sua rodinha de amigos.
+Slug: coffee2
+Author: Organização
+Tipo: intervalo
+
+Segundo café do dia, com os estandes das empresas abertos.

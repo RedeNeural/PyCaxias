@@ -1,366 +1,415 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-{% include 'head.html' %}
+{% extends "base.html" %}
 
-<body>
+{# ---------------------------------------------------------------------------
+   Coleta o conteudo por categoria. Tudo vem dos markdown em content/.
+   --------------------------------------------------------------------------- #}
+{% set agenda = [] %}
+{% set palestrantes = [] %}
+{% set diamante = [] %}
+{% set ouro = [] %}
+{% set prata = [] %}
+{% set apoiadores = [] %}
 
-    <!--==========================
-    Header
-    ============================-->
-    {% include 'header.html'%}
+{% for a in articles %}
+  {% set categoria = a.category|string|lower %}
+  {% if a.date.year == SITEYEAR %}
+    {% if categoria == 'horarios' %}{% set _ = agenda.append(a) %}
+    {% elif categoria == 'palestrantes' %}{% set _ = palestrantes.append(a) %}
+    {% elif categoria == 'diamante' %}{% set _ = diamante.append(a) %}
+    {% elif categoria == 'ouro' %}{% set _ = ouro.append(a) %}
+    {% elif categoria == 'prata' %}{% set _ = prata.append(a) %}
+    {% elif categoria == 'apoiadores' %}{% set _ = apoiadores.append(a) %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
-    <!--==========================
-    Intro Section
-    ============================-->
-    <section id="intro">
-        <div class="intro-container wow animate__fadeInUp">
-            <img src="{{ SITEURL }}/theme/img/logo{{SITEYEAR}}.png" alt="logo-PyCaxias" class="img-fluid" style="width: 50%"><br>
-            <h1 class="mb-4 pb-0">
-                <span style="display: none;">PyCaxias</span>
-            </h1>
-            <p class="mb-1 pb-0">{{DAY_EVENT}}, {{LOCAL}}</p>
+{% set tem_patrocinador = diamante or ouro or prata or apoiadores %}
+
+{% block trilho %}
+<nav class="trilho" aria-label="Seções da página">
+  <ul class="trilho__lista">
+    <li><a class="trilho__parada" href="#sobre"><span>Sobre</span></a></li>
+    <li><a class="trilho__parada" href="#agenda"><span>Agenda</span></a></li>
+    <li><a class="trilho__parada" href="#palestrantes"><span>Palestrantes</span></a></li>
+    <li><a class="trilho__parada" href="#inscricao"><span>Inscrição</span></a></li>
+    <li><a class="trilho__parada" href="#patrocinio"><span>Patrocínio</span></a></li>
+    <li><a class="trilho__parada" href="#contato"><span>Contato</span></a></li>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block conteudo %}
+
+<!-- =====================================================================
+     Hero
+     ===================================================================== -->
+<section class="hero" id="topo">
+  <img class="hero__cobra" src="{{ SITEURL }}/theme/img/elemento-cobra.png" alt="" aria-hidden="true">
+
+  <div class="envelope hero__interno">
+    <p class="dados hero__etiqueta">A comunidade Python da Serra se encontra de novo</p>
+
+    <picture>
+      <source media="(max-width: 700px)" srcset="{{ SITEURL }}/theme/img/logo-2026-stack.png">
+      <img class="hero__logo" src="{{ SITEURL }}/theme/img/logo-2026.png"
+           alt="PyCaxias 2026" width="1600" height="353" fetchpriority="high">
+    </picture>
+
+    <h1 class="display hero__titulo">Um sábado inteiro<br>de <em>Python</em> em Caxias</h1>
+
+    <p class="hero__linha">
+      Palestras de quem constrói software de verdade, uma comunidade que se encontra
+      pessoalmente e café suficiente para atravessar o dia. Entrada gratuita.
+    </p>
+
+    <div class="hero__acoes">
+      {% if INCRICAO_OPENED and INSCRICAO_LINK %}
+      <a class="botao botao--solido" href="{{ INSCRICAO_LINK }}" target="_blank" rel="noopener"><span>Inscreva-se</span></a>
+      {% else %}
+      <a class="botao botao--solido" href="#inscricao"><span>Como participar</span></a>
+      {% endif %}
+
+      {% if CALL_FOR_PAPERS_OPENED and CALL_FOR_PAPERS %}
+      <a class="botao botao--vazado" href="{{ CALL_FOR_PAPERS }}" target="_blank" rel="noopener"><span>Enviar palestra</span></a>
+      {% endif %}
+    </div>
+
+    <div class="faixa-dados">
+      <div class="faixa-dados__item">
+        <span class="faixa-dados__rotulo">Data</span>
+        <span class="faixa-dados__valor">
+          <time datetime="{{ DAY_EVENT_ISO }}">{{ DAY_EVENT_SHORT }}</time> · {{ WEEKDAY_EVENT }}
+        </span>
+      </div>
+      <div class="faixa-dados__item">
+        <span class="faixa-dados__rotulo">Local</span>
+        <span class="faixa-dados__valor">
+          <a href="{{ LOCAL_MAP }}" target="_blank" rel="noopener">{{ LOCAL }}</a>
+        </span>
+      </div>
+      <div class="faixa-dados__item">
+        <span class="faixa-dados__rotulo">Horário</span>
+        <span class="faixa-dados__valor">{{ HOURS_EVENT }}</span>
+      </div>
+      <div class="faixa-dados__item">
+        <span class="faixa-dados__rotulo">Entrada</span>
+        <span class="faixa-dados__valor">Gratuita</span>
+      </div>
+      <div class="faixa-dados__item">
+        <span class="faixa-dados__rotulo">Contagem</span>
+        <span class="faixa-dados__valor" id="contagem" data-data-evento="{{ DAY_EVENT_ISO }}">—</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     Sobre
+     ===================================================================== -->
+<section class="secao secao--superficie" id="sobre">
+  <div class="envelope">
+    <div class="sobre revelar">
+
+      <div class="sobre__texto">
+        <p class="dados olho">Sobre o evento</p>
+        <h2 class="display secao__titulo">Python perto de casa,<br>sem precisar pegar estrada</h2>
+
+        <p>
+          O PyCaxias é o encontro da comunidade Python de Caxias do Sul. A ideia continua
+          a mesma desde a primeira edição: aproximar quem programa em Python na Serra,
+          espalhar conhecimento e provar que dá para ter um evento de tecnologia de peso
+          sem precisar viajar para a capital.
+        </p>
+        <p>
+          É <strong>um dia inteiro, de graça e aberto a todo mundo</strong> — de quem nunca
+          escreveu uma linha de código a quem já vive de Python há anos. Estudante,
+          pessoa desenvolvedora, curiosa: todo mundo cabe.
+        </p>
+        <p>
+          Uma tradição que a gente mantém: quem puder, traz <strong>1&nbsp;kg de alimento
+          não perecível</strong>. Tudo é doado depois do evento.
+        </p>
+      </div>
+
+      <div class="cartoes-info">
+        <div class="cartao-info">
+          <h3>Quando</h3>
+          <p>{{ DAY_EVENT }}
+            <span>{{ WEEKDAY_EVENT }}, das {{ HOURS_EVENT|replace('as', 'às') }}.</span>
+          </p>
         </div>
-    </section>
+        <div class="cartao-info">
+          <h3>Onde</h3>
+          <p>{{ LOCAL }}
+            <span>{{ LOCAL_ADDRESS }} · <a href="{{ LOCAL_MAP }}" target="_blank" rel="noopener">ver no mapa</a></span>
+          </p>
+        </div>
+        <div class="cartao-info">
+          <h3>Quanto custa</h3>
+          <p>Nada
+            <span>A inscrição é gratuita. Quem quiser apoiar o evento pode comprar o kit com camiseta.</span>
+          </p>
+        </div>
+      </div>
 
-    <main id="main">
+    </div>
 
-        <!--==========================
-      About Section
-    ============================-->
-        <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.5s">
-                        <h2>Sobre o evento</h2>
-                        <p>
-                            Evento da comunidade Python de Caxias do Sul, com intuito de popularizar e disseminar o
-                            conhecimento da linguagem python.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="1s">
-                        <h3>Quando </h3>
-                        <p>Sábado<br>{{DAY_EVENT}}<br>08h - 18h</p>
-                    </div>
-                    <div class="col-lg-3  wow animate__fadeInUp" data-wow-delay="1.5s">
-                        <h3>Onde </h3>
-                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.041357465406!2d-51.15019854999999!3d-29.163453499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebdfe6be2163d%3A0x63adee0321bf5366!2sUCS%20-%20Bloco%2058!5e0!3m2!1spt-BR!2sbr!4v1677013756575!5m2!1spt-BR!2sbr"
-                            target="_blank" class="">
-                            <p>{{LOCAL}}</p>
-                    </div>
-                    </a>
+    <div class="edicoes revelar">
+      <p class="edicoes__titulo">A gente faz isso desde 2014</p>
+      <ul class="edicoes__lista">
+        {% for ano, endereco in OLD_EVENTS %}
+        <li><a class="edicoes__ano" href="{{ endereco }}">{{ ano }}</a></li>
+        {% endfor %}
+        <li><span class="edicoes__ano edicoes__ano--atual" aria-current="page">{{ SITEYEAR }}</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-                </div>
-            </div>
-            </div>
-        </section>
+<!-- =====================================================================
+     Agenda
+     ===================================================================== -->
+<section class="secao secao--floresta" id="agenda">
+  <div class="envelope">
+    <div class="secao__cabeca revelar">
+      <p class="dados olho">Agenda</p>
+      <h2 class="display secao__titulo">O dia, hora a hora</h2>
+      <p class="secao__intro">
+        Uma trilha única, sem salas paralelas: ninguém precisa escolher entre duas palestras boas.
+      </p>
+    </div>
 
-        <!--==========================
-        Inscricao Section
-        ============================-->
-        {% if INCRICAO_OPENED %}
-            <section id="inscricao" class="pt-4 mt-4 wow animate__fadeInUp">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="pink">Inscrição</h2>
-                        <p>
-                            Esse ano contamos duas formas de inscrição: a já <b>tradicional gratuita</b>,
-                            que garante acesso a todo o evento, incluindo palestras, sem custos.
-                            A outra forma é por meio da compra de um <b>Ingresso com camiseta até dia 03/05/2025</b>,
-                            com o intuito de ajudar o evento a crescer e proporcionar uma melhor infraestrutura.
-                            Apoie e ganhe uma camiseta pra sair por aí mostrando que ama Python!
-                        </p>
-                        <ul class="mt-4 list-group list-group-flush">
-                            <!-- <li class="list-group-item text-center">
-                                Inicio das Inscrições:
-                                <strong>20/04/2024</strong>
-                            </li>-->
-                            <li class="list-group-item text-center"> 
-                                Fim das Inscrições com Camiseta: <strong>03/05/2025</strong>
-                            </li>
-                            <li class="list-group-item text-center">
-                                Fim das Inscrições: <strong>17/05/2025</strong>
-                            </li>
-                        </ul>
-                        <p>
-                            <a href="{{INSCRICAO_LINK}}" class="btn-patrocinio-2 mt-4" target="_blank">
-                                [Inscreva-se Agora]
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </section>
+    {% if agenda %}
+    <div class="agenda revelar">
+      {% for a in agenda %}
+      <article class="agenda__item{% if a.tipo and a.tipo|lower == 'intervalo' %} agenda__item--intervalo{% endif %}">
+        <time class="agenda__hora" datetime="{{ a.date.isoformat() }}">{{ a.date.strftime('%H:%M') }}</time>
+        <div>
+          <h3 class="agenda__titulo">
+            {% if a.content %}<a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}
+          </h3>
+          {% if a.author and a.author|string|lower not in ['host', 'organização', 'organizacao'] %}
+          <p class="agenda__pessoa">{{ a.author }}</p>
+          {% endif %}
+          {% if a.summary %}<p class="agenda__resumo">{{ a.summary|striptags|truncate(190) }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="aviso-grade">A grade pode mudar até a véspera do evento.</p>
+
+    {% else %}
+    <div class="vazio revelar">
+      <h3>A grade está sendo montada</h3>
+      <p>
+        As palestras de {{ DAY_EVENT_SHORT }} são escolhidas a partir das propostas que a
+        comunidade envia. Publicamos a grade completa aqui assim que a seleção fechar.
+      </p>
+      {% if CALL_FOR_PAPERS_OPENED and CALL_FOR_PAPERS %}
+      <a class="botao botao--solido" href="{{ CALL_FOR_PAPERS }}" target="_blank" rel="noopener"><span>Propor uma palestra</span></a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- =====================================================================
+     Palestrantes
+     ===================================================================== -->
+<section class="secao secao--superficie" id="palestrantes">
+  <div class="envelope">
+    <div class="secao__cabeca revelar">
+      <p class="dados olho">Palestrantes</p>
+      <h2 class="display secao__titulo">Quem sobe no palco</h2>
+    </div>
+
+    {% if palestrantes %}
+    <div class="grade-palestrantes revelar">
+      {% for p in palestrantes %}
+      <article class="palestrante">
+        {% if p.image %}
+        <img src="{{ SITEURL }}/theme/img/palestrantes/{{ p.image }}" alt="{{ p.title }}" loading="lazy" width="400" height="400">
         {% endif %}
-        <!-- ==========================
-      Speakers Section
-    ============================ -->
-        <section id="speakers">
-            <div class="container">
-                 
-                <div class="section-header wow animate__fadeInUp">
-                    <h2 class="green">Palestrantes</h2>
-                    <p>Venha nos ajudar a fazer um evento incrível!</p>
-                    <ul class="my-4 list-group list-group-flush">
-                    </ul>
-                    <p>
-                        <a href="{{CALL_FOR_PAPERS}}" class="c4p-link" target="_blank">[call for papers]</a>
-                    </p>
-                </div>
-               
-                <!-- <div class="row">
-                    {% for a in articles %}
-                    {% if a.category == "Palestrantes" and a.date.year == SITEYEAR %}
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker">
-                            <img src="{{ SITEURL }}/theme/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">{{a.palestrante}}</a></h3>
-                                <p>{{a.palestra}}</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
-                    {% endfor %}
-                </div> -->
-            </div>
-        </section>
+        <div class="palestrante__corpo">
+          <h3 class="palestrante__nome"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></h3>
+          {% if p.palestra %}<p class="palestrante__palestra">{{ p.palestra }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
 
-        <!--==========================
-      Schedule Section
-    ============================-->
-        <section id="schedule" class="section-with-bg">
-            <div class="container wow animate__fadeInUp">
-                <div class="section-header">
-                    <h2 class="blue">Agenda</h2>
-                    <p>Pedimos à todos a doação de 1kg de alimento não perecível</p>
-                </div>
+    {% else %}
+    <div class="vazio revelar">
+      <h3>O palco é de quem se candidatar</h3>
+      <p>
+        O call for papers está aberto. Não precisa ser especialista nem ter palestrado antes —
+        boa parte de quem já subiu no palco do PyCaxias estreou aqui. Se você resolveu um
+        problema interessante com Python, isso já é uma palestra.
+      </p>
+      {% if CALL_FOR_PAPERS_OPENED and CALL_FOR_PAPERS %}
+      <a class="botao botao--solido" href="{{ CALL_FOR_PAPERS }}" target="_blank" rel="noopener"><span>Enviar minha proposta</span></a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
 
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="btn-patrocinio-1" href="#day-1" role="tab" data-toggle="tab">Dia {{DAY_EVENT}}</a>
-                    </li>
-                </ul>
+<!-- =====================================================================
+     Inscricao
+     ===================================================================== -->
+<section class="secao secao--floresta" id="inscricao">
+  <div class="envelope">
+    <div class="secao__cabeca revelar">
+      <p class="dados olho">Inscrição</p>
+      <h2 class="display secao__titulo">Como participar</h2>
+      <p class="secao__intro">
+        A entrada é gratuita e sempre será. Quem quiser dar uma força ao evento pode
+        comprar o kit com camiseta — é isso que paga o café e a estrutura.
+      </p>
+    </div>
 
-                <p class="sub-heading">Grade sujeita a alterações!</p>
+    {% if INCRICAO_OPENED and INSCRICAO_LINK %}
+    <div class="ingressos revelar">
+      <div class="ingresso">
+        <span class="ingresso__tipo">Ingresso comum</span>
+        <span class="ingresso__preco">Gratuito</span>
+        <ul>
+          <li>Acesso a todas as palestras</li>
+          <li>Coffee break</li>
+          <li>Certificado de participação</li>
+        </ul>
+        <a class="botao botao--vazado" href="{{ INSCRICAO_LINK }}" target="_blank" rel="noopener"><span>Garantir vaga</span></a>
+      </div>
 
-                <div class="tab-content row justify-content-center">
-                    <!-- Schdule Day 1 -->
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        {% for a in articles %}
-                            {% if a.category == "horarios" and a.date.year == SITEYEAR %}
-                            <a href="#">
-                                <div class="row schedule-item">
-                                    <div class="col-md-2">
-                                        <time><strong>{{a.date.strftime('%H:%M') }}</strong></time>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h4>{{a.title}}</h4>
-                                        <p>{{a.author}}</p>
-                                    </div>
-                                </div>
-                            </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div> 
-                </div>
+      <div class="ingresso ingresso--destaque">
+        <span class="ingresso__tipo">Ingresso apoio</span>
+        <span class="ingresso__preco">Com camiseta</span>
+        <ul>
+          <li>Tudo que o ingresso comum tem</li>
+          <li>Camiseta oficial da edição {{ SITEYEAR }}</li>
+          {% if INSCRICAO_TSHIRT_DEADLINE %}<li>Compra até {{ INSCRICAO_TSHIRT_DEADLINE }}</li>{% endif %}
+        </ul>
+        <a class="botao botao--solido" href="{{ INSCRICAO_LINK }}" target="_blank" rel="noopener"><span>Apoiar o evento</span></a>
+      </div>
+    </div>
 
-        </section>
+    {% else %}
+    <div class="vazio revelar">
+      <h3>As inscrições abrem em breve</h3>
+      <p>
+        Ainda estamos fechando a data de abertura. Anunciamos primeiro no Instagram —
+        siga por lá para não perder, as vagas costumam acabar antes do evento.
+      </p>
+      {% if SOCIAL.instagram %}
+      <a class="botao botao--solido" href="{{ SOCIAL.instagram }}" target="_blank" rel="noopener"><span>Seguir no Instagram</span></a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
 
-    <!--==========================
-    Sponsors Section
-    ============================-->
-        <section id="supporters" class="wow animate__fadeInUp">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="green">Patrocinadores</h2>
-                </div>
-                <p class="text-center">
-                    Quer ser um patrocinador? Veja nosso plano de patrocínio e saiba como ajudar!
-                </p>
-                <p class="text-center">
-                    <a href="{{ SITEURL }}/theme/pdf/plano_de_patrocinio.pdf" class="btn-patrocinio-1" target="_blank">Plano de Patrocinio (pt-br)</a>
-                </p>
-                <p class="text-center">
-                    <a href="{{ SITEURL }}/theme/pdf/sponsorship_package.pdf" class="btn-patrocinio-2" target="_blank">Sponsorship Plan (en)</a>
-                </p>
-            </div>
-            <div class="container wow animate__fadeInUp">
-                <div class="section-header">
-                    <h2 class="pink">Patrocinadores Diamante</h2>
-                </div>
-                <div class="row no-gutters clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "diamante" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-3 supporters-wrap col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="container wow animate__fadeInUp">
-                <div class="section-header">
-                    <h2 class="green">Patrocinadores Ouro</h2>
-                </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "ouro" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="container wow animate__fadeInUp">
-                <div class="section-header">
-                    <h2 class="pink">Patrocinadores Prata</h2>
-                </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "prata" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="container wow animate__fadeInUp">
-                <div class="section-header">
-                    <h2 class="blue">Apoiadores</h2>
-                </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "apoiadores" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
+<!-- =====================================================================
+     Patrocinio
+     ===================================================================== -->
+<section class="secao secao--superficie" id="patrocinio">
+  <div class="envelope">
+    <div class="secao__cabeca revelar">
+      <p class="dados olho">Patrocínio</p>
+      <h2 class="display secao__titulo">Quem faz o evento acontecer</h2>
+    </div>
 
-        <!--==========================
-        Subscribe Section
-        ============================-->
-        <section id="subscribe">
-            <div class="container wow animate__fadeInUp">
-                <div class="section-header">
-                    <h2>Código de Conduta</h2>
-                    <p>
-                        Queremos que todas as pessoas sejam aceitas e bem-vindas. Portanto, solicitamos que leiam nosso
-                        <a href="https://python.org.br/cdc/" class="cdc-link" target="_blank"><strong>Código de Conduta</strong></a>
-                    </p>
-                </div>
-            </div>
-        </section>
+    <div class="chamada-patrocinio revelar">
+      <h3>Sua empresa contratando na Serra?</h3>
+      <p>
+        O PyCaxias reúne num sábado a maior concentração de gente que programa em Python
+        da região. Patrocinar dá visibilidade de marca, espaço para estande e contato direto
+        com quem você quer contratar. Os planos e as cotas estão no material abaixo.
+      </p>
+      <div class="chamada-patrocinio__acoes">
+        <a class="botao botao--solido" href="{{ SITEURL }}/theme/pdf/plano_de_patrocinio.pdf" target="_blank" rel="noopener"><span>Plano de patrocínio (PT)</span></a>
+        <a class="botao botao--vazado" href="{{ SITEURL }}/theme/pdf/sponsorship_package.pdf" target="_blank" rel="noopener"><span>Sponsorship plan (EN)</span></a>
+      </div>
+    </div>
 
-        <!--==========================
-        Contact Section
-        ============================-->
-        <section id="contact" class="section-bg wow animate__fadeInUp">
+    {% if tem_patrocinador %}
+      {% for rotulo, lista, classe in [
+        ('Diamante', diamante, 'diamante'),
+        ('Ouro', ouro, 'ouro'),
+        ('Prata', prata, 'prata'),
+        ('Apoio', apoiadores, 'apoio')
+      ] %}
+        {% if lista %}
+        <div class="cota cota--{{ classe }} revelar">
+          <h3 class="cota__titulo"><span class="cota__marca" aria-hidden="true"></span>{{ rotulo }}</h3>
+          <div class="grade-logos">
+            {% for p in lista %}
+            <a class="logo-patro" href="{{ p.link }}" target="_blank" rel="noopener"
+               title="{{ p.subtitle|default(p.title, true) }}">
+              <img src="{{ SITEURL }}{{ p.imagem }}" alt="{{ p.imagem_alt|default(p.title, true) }}" loading="lazy">
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
 
-            <div class="container">
+    {% else %}
+    <div class="vazio revelar">
+      <h3>As cotas de {{ SITEYEAR }} estão abertas</h3>
+      <p>
+        Nenhuma empresa confirmou patrocínio ainda para esta edição — o primeiro nome a
+        entrar fica em destaque em todo o material do evento. Fale com a organização.
+      </p>
+      <a class="botao botao--solido" href="mailto:{{ EMAIL }}?subject=Patroc%C3%ADnio%20PyCaxias%20{{ SITEYEAR }}"><span>Falar sobre patrocínio</span></a>
+    </div>
+    {% endif %}
+  </div>
+</section>
 
-                <div class="section-header">
-                    <h2 class="pink">Contato</h2>
-                    <p>Para patrocínio ou dúvidas sobre o evento, entre em contato conosco</p>
-                </div>
+<!-- =====================================================================
+     Codigo de conduta + contato
+     ===================================================================== -->
+<section class="secao secao--floresta" id="contato">
+  <div class="envelope">
 
-                <div class="row contact-info">
+    <div class="conduta revelar">
+      <span class="conduta__selo">Código<br>de conduta</span>
+      <p>
+        Queremos que todo mundo se sinta bem-vindo e seguro no evento. Participar do
+        PyCaxias significa concordar com o
+        <a href="{{ CODIGO_CONDUTA }}" target="_blank" rel="noopener">Código de Conduta da comunidade Python Brasil</a>.
+        Se algo acontecer, procure qualquer pessoa da organização — a equipe de resposta é identificada na abertura.
+      </p>
+    </div>
 
-                    <div class="col-md-4">
-                        <div class="contact-address">
-                            <i class="ion-ios-location-outline"></i>
-                            <h3>Telegram</h3>
-                            <p><a href="https://t.me/LucasEduard">@LucasEduard</a></p>
-                        </div>
-                    </div>
+    <div class="secao__cabeca revelar" style="margin-top: clamp(3rem, 6vw, 5rem);">
+      <p class="dados olho">Contato</p>
+      <h2 class="display secao__titulo">Fale com a organização</h2>
+      <p class="secao__intro">
+        Dúvidas sobre o evento, proposta de patrocínio ou vontade de ajudar na organização:
+        é só chamar.
+      </p>
+    </div>
 
-                    <div class="col-md-4">
-                        <div class="contact-phone">
-                            <i class="ion-ios-telephone-outline"></i>
-                            <h3>Telefone/whatsapp</h3>
-                            <p><a href="https://api.whatsapp.com/send?phone=54991246539&text=Olá Lucas, gostaria de falar sobre o PyCaxias">(54) 9 9124-6539</a></p>
-                            <p><a href="https://api.whatsapp.com/send?phone=54991709966&text=Olá Pedro, gostaria de falar sobre o PyCaxias">(54) 9 9170-9966</a></p>
-                        </div>
-                    </div>
+    <div class="grade-contato revelar">
+      {% for pessoa in CONTATOS %}
+      <div class="contato-cartao">
+        <span class="contato-cartao__papel">{{ pessoa.papel }}</span>
+        <span class="contato-cartao__nome">{{ pessoa.nome }}</span>
+        <a href="{{ pessoa.whatsapp }}" target="_blank" rel="noopener">{{ pessoa.telefone }} · WhatsApp</a>
+        {% if pessoa.telegram %}<a href="{{ pessoa.telegram }}" target="_blank" rel="noopener">Telegram</a>{% endif %}
+      </div>
+      {% endfor %}
 
-                    <div class="col-md-4">
-                        <div class="contact-email">
-                            <i class="ion-ios-email-outline"></i>
-                            <h3>Email</h3>
-                            <p><a href="mailto:pythoncaxias@gmail.com">pythoncaxias@gmail.com</a></p>
-                        </div>
-                    </div>
+      <div class="contato-cartao">
+        <span class="contato-cartao__papel">Para qualquer assunto</span>
+        <span class="contato-cartao__nome">E-mail</span>
+        <a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a>
+        {% if SOCIAL.instagram %}<a href="{{ SOCIAL.instagram }}" target="_blank" rel="noopener">@pycaxias no Instagram</a>{% endif %}
+      </div>
+    </div>
 
-                </div>
+  </div>
+</section>
 
-            </div>
-        </section><!-- #contact -->
-
-    </main>
-
-
-    <!--==========================
-        Footer
-    ============================-->
-    {% include 'footer.html'%}
-
-    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="{{ SITEURL }}/theme/lib/jquery/jquery.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/easing/easing.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/superfish/hoverIntent.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/superfish/superfish.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/wow/wow.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/venobox/venobox.min.js"></script>
-    <script src="{{ SITEURL }}/theme/lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="{{ SITEURL }}/theme/js/main.js"></script>
-</body>
-
-</html>
+{% endblock %}

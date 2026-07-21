@@ -1,7 +1,7 @@
-Title: Recrutamento em Tecnologia
-Date: 2025-05-17 14:50
+Title: Palestra 6
+Date: 2026-09-26 15:45
 Category: horarios
 Tags: horarios
 Slug: palestra6
-Author: Sofia Turra
+Author: A definir
 

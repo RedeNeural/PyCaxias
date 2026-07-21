@@ -1,10 +1,7 @@
-Title: Desafios de observabilidade em arquiteturas de microserviço
-Date: 2025-05-17 09:20
+Title: Palestra 2
+Date: 2026-09-26 09:45
 Category: horarios
 Tags: horarios
 Slug: palestra2
-Author: Lucas Soranzo
+Author: A definir
 
-
-
-Nessa palestra (show me the code) irei demostrar a criação de um projeto django desde a configuração, criação de uma app e se der tempo o deploy.

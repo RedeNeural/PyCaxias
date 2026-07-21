@@ -1,6 +1,7 @@
-Title: Treinando IA com Python sem estourar o orçamento
-Date: 2025-05-17 13:30
+Title: Palestra 4
+Date: 2026-09-26 13:45
 Category: horarios
 Tags: horarios
 Slug: palestra4
-Author: William Moraes da Silva
+Author: A definir
+

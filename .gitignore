@@ -1,9 +1,5 @@
 output/
 .venv/
-.vscode/
-.env
 __pycache__/
-*~
-*.swp
-*.sublime-project
-*.sublime-workspace
+*.pyc
+.env

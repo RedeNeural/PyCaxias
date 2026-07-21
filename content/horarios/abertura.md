@@ -1,8 +1,8 @@
 Title: Abertura
-Date: 2025-05-17 08:30
+Date: 2026-09-26 08:40
 Category: horarios
 Tags: horarios
-Slug: Abertura
-Author: Host
+Slug: abertura
+Author: Organização
 
-Breve abertura do evento com agradecimentos aos patrocinadores e participantes, anúncio da hashtag do evento para publicação das fotos nas redes sociais e apresentação da equipe de resposta.
+Boas-vindas, agradecimento a quem patrocinou, apresentação da equipe de resposta e a hashtag do evento.

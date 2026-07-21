@@ -1,7 +1,9 @@
 Title: Encerramento
-Date: 2025-05-17 17:30
+Date: 2026-09-26 17:30
 Category: horarios
 Tags: horarios
 Slug: encerramento
-Author: Host
-Hora de nos despedirmos e nos organizarmos para o pós-evento! Em breve anunciaremos o local.
+Author: Organização
+Tipo: intervalo
+
+Sorteio dos brindes, agradecimentos e combinação do pós-evento.

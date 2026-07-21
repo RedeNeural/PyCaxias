@@ -1,8 +1,8 @@
 Title: Keynote
-Date: 2025-05-17 16:30
+Date: 2026-09-26 16:30
 Category: horarios
 Tags: horarios
 Slug: keynote
-Author: Adriano Margarin
+Author: A definir
 
-Vamos ouvir que essa fera vai nos contar.
+A palestra que fecha o dia.

@@ -1,7 +1,8 @@
-Title: Lightning talk
-Date: 2025-05-17 11:20
+Title: Lightning talks
+Date: 2026-09-26 11:45
 Category: horarios
 Tags: horarios
 Slug: lightningtalk
-Author: Host
-Espaço de 3 minutos para qualquer pessoa no evento expor uma ideia, contar uma história ou agradecer.
+Author: Aberto a todo mundo
+
+Três minutos no microfone para qualquer pessoa: uma ideia, um projeto, uma história ou um agradecimento. Inscrição no próprio dia.
