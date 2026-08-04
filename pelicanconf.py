@@ -24,10 +24,10 @@ LOCAL_ADDRESS = 'Rua Ludovico Cavinato, 2570 - Bairro Fátima, Caxias do Sul/RS'
 LOCAL_MAP = 'https://www.google.com/maps/search/?api=1&query=Uniftec+Caxias+do+Sul'
 
 # Chamadas e inscricoes
-CALL_FOR_PAPERS = 'https://forms.gle/mcw6gjmCjzu8cnN9A'
+CALL_FOR_PAPERS = 'https://docs.google.com/forms/d/e/1FAIpQLScD8pNEFKBdWY22R0jzD3ItPMHs8YQtBxLpYJw-Wb1W1Of2ZA/viewform?pli=1'
 CALL_FOR_PAPERS_OPENED = True
-INCRICAO_OPENED = False
-INSCRICAO_LINK = ''
+INCRICAO_OPENED = True
+INSCRICAO_LINK = 'https://www.sympla.com.br/evento/pycaxias-2026/3508411'
 INSCRICAO_TSHIRT_DEADLINE = ''
 
 # ---------------------------------------------------------------------------
