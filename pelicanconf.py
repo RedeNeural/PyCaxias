@@ -20,8 +20,8 @@ WEEKDAY_EVENT = 'Sábado'
 HOURS_EVENT = '08h às 18h'
 
 LOCAL = 'Uniftec Caxias do Sul'
-LOCAL_ADDRESS = 'Rua Ludovico Cavinato, 2570 - Bairro Fátima, Caxias do Sul/RS'
-LOCAL_MAP = 'https://www.google.com/maps/search/?api=1&query=Uniftec+Caxias+do+Sul'
+LOCAL_ADDRESS = 'R. Gustavo Ramos Sehbe, 107 - Cinquentenário, Caxias do Sul/RS'
+LOCAL_MAP = 'https://www.google.com/maps/search/?api=1&query=R.+Gustavo+Ramos+Sehbe,+107+-+Cinquenten%C3%A1rio,+Caxias+do+Sul+-+RS'
 
 # Chamadas e inscricoes
 CALL_FOR_PAPERS = 'https://docs.google.com/forms/d/e/1FAIpQLScD8pNEFKBdWY22R0jzD3ItPMHs8YQtBxLpYJw-Wb1W1Of2ZA/viewform?pli=1'

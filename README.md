@@ -171,8 +171,6 @@ Extraídas do PDF do manual, em `theme/static/img/`:
 
 ## Pendências
 
-- [ ] Confirmar o endereço da Uniftec em `LOCAL_ADDRESS` (está com o do campus da
-      Rua Ludovico Cavinato — conferir qual bloco recebe o evento)
 - [ ] Abrir inscrições: preencher `INSCRICAO_LINK` e virar `INCRICAO_OPENED = True`
 - [ ] Atualizar o PDF do plano de patrocínio com a data e o local novos
       (`theme/static/pdf/`) — os arquivos ainda são os de 2025

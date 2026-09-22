@@ -1,7 +1,8 @@
-Title: Palestra 2
+Title: MVP
 Date: 2026-09-26 09:45
 Category: horarios
 Tags: horarios
 Slug: palestra2
-Author: A definir
+Author: Bwolf
 
+Tirando uma ideia do papel.

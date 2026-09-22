@@ -344,7 +344,7 @@
             {% for p in lista %}
             <a class="logo-patro" href="{{ p.link }}" target="_blank" rel="noopener"
                title="{{ p.subtitle|default(p.title, true) }}">
-              <img src="{{ SITEURL }}{{ p.imagem }}" alt="{{ p.imagem_alt|default(p.title, true) }}" loading="lazy">
+              <img src="{{ SITEURL }}{{ p.imagem }}" alt="{{ p.imagem_alt|default(p.title, true) }}" loading="lazy"{% if p.mono %} class="logo-patro__mono"{% endif %}>
             </a>
             {% endfor %}
           </div>

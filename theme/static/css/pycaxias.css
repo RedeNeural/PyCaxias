@@ -979,21 +979,34 @@ p:last-child { margin-bottom: 0; }
 .cota--ouro     .grade-logos { grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); }
 
 .logo-patro {
-  background: #ffffff;
-  border: 1px solid var(--borda);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--borda);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.1rem 1.25rem;
+  padding: 1.1rem 0.75rem;
   min-height: 92px;
-  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, transform 0.22s ease;
 }
 .logo-patro:hover {
-  border-color: var(--neon);
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(100, 255, 0, 0.16);
+  border-color: var(--neon);
 }
-.logo-patro img { max-height: 62px; width: auto; object-fit: contain; }
+.logo-patro img {
+  max-height: 62px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5));
+}
+.logo-patro img.logo-patro__mono {
+  filter: brightness(0) invert(1) opacity(0.88) drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5));
+}
+
+.cota--diamante .logo-patro { border-bottom-color: var(--azul); }
+.cota--ouro     .logo-patro { border-bottom-color: var(--neon); }
+.cota--prata    .logo-patro { border-bottom-color: var(--sage); }
+.cota--apoio    .logo-patro { border-bottom-color: var(--magenta); }
 
 /* Chamada de patrocinio */
 .chamada-patrocinio {
